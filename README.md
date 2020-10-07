@@ -1,10 +1,6 @@
-# BranchSpec: Leakage of Sensitive Information through Nested Speculative Branches
+# BranchSpec: Leakage of Sensitive Information through Nested Speculative Branche Execution
 
 This repository contains proof-of-concept of information leakage by exploiting branch instruction executions in speculative path. 
-
-## Paper
-
-All details about this work is in our ressearch paper **URL**
 
 ## Tested systems
 
@@ -20,7 +16,7 @@ All details about this work is in our ressearch paper **URL**
 
 ## Variants
 
-This repository contains two variant of the exploitation using two different type of code gadgets.
+This repository contains two PoCs, each of which exploits a different code gadget.
 
 #### Variant 1: **poc_v1**
 
@@ -48,7 +44,7 @@ for (int i = x; i < array_size; i++) {
 
 ## Building
 
-This project requires GNU Make, GCC and nasm to build successfully. On Ubuntu, you can install them using:
+This project uses GNU Make, GCC and nasm to compile. On Ubuntu, you can install them using:
 
 ```bash
 sudo apt-get install build-essential
@@ -184,4 +180,19 @@ Secret value, secret[97]: 1; Inferred: 1; Latency: 127
 Secret value, secret[98]: 1; Inferred: 1; Latency: 127
 Secret value, secret[99]: 1; Inferred: 1; Latency: 129
 Total bit sent: 100, Total Error: 0, Threshold: 138
+```
+
+## Paper
+
+More details about this work can be found in our [paper](http://fan-yao.com/paper/2020_ICCD_branchspec.pdf).
+
+## Citing BranchSpec
+
+```bibtex
+@article{branchspec2020,
+  title={{BranchSpec: Information Leakage Attacks Exploiting Speculative Branch Instruction Executions}},
+  author={Chowdhuryy, Md Hafizul Islam and Liu, Hang and Yao, Fan},
+  booktitle={IEEE International Conference on Computer Design (ICCD)},
+  year={2020}
+}
 ```
