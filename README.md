@@ -189,7 +189,7 @@ More details about this work can be found in our [paper](http://fan-yao.com/pape
 ## Citing BranchSpec
 
 ```bibtex
-@article{branchspec2020,
+@inproceedings{branchspec2020,
   title={{BranchSpec: Information Leakage Attacks Exploiting Speculative Branch Instruction Executions}},
   author={Chowdhuryy, Md Hafizul Islam and Liu, Hang and Yao, Fan},
   booktitle={IEEE International Conference on Computer Design (ICCD)},
