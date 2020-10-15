@@ -33,7 +33,7 @@ int main() {
    * Threshold latency between correct prediction and mis-prediction
    * This is used in the inference stage of the attacker
    */
-  THRESHOLD = 190; // Setup the threshold latency properly 
+  THRESHOLD = 140; // Setup the threshold latency properly 
 
   offset = (size_t)(secret - (uint8_t * ) array);
 
