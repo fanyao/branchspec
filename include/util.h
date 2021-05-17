@@ -12,7 +12,7 @@
 #include <signal.h>
 #include <setjmp.h>
 #include <sched.h>
-#include <stdbool.h> 
+#include <stdbool.h>
 #include <stdlib.h>
 #include <pthread.h>
 
@@ -26,19 +26,19 @@ static size_t THRESHOLD = 0;
 extern int randomize_pht();
 
 
-void mfence() { 
+void mfence() {
   /* Utility functions from https://github.com/IAIK/transientfail/ */
   asm volatile("mfence");
 }
 
-void flush(void *p) { 
+void flush(void *p) {
   /* Utility functions from https://github.com/IAIK/transientfail/ */
   asm volatile("clflush 0(%0)\n" : : "c"(p) : "rax");
 }
 
-void maccess(void *p) { 
+void maccess(void *p) {
   /* Utility functions from https://github.com/IAIK/transientfail/ */
-  asm volatile("movq (%0), %%rax\n" : : "c"(p) : "rax"); 
+  asm volatile("movq (%0), %%rax\n" : : "c"(p) : "rax");
 }
 
 uint64_t rdtsc() {
@@ -117,4 +117,17 @@ static inline void additional_ops() {
   nop_16();
   nop_16();
   nop_16();
+}
+
+
+// Utilities for two-level predictor based attack
+
+#define FORCE_INLINE __attribute__((always_inline)) inline
+#define AT taken_branch(0);
+#define AT_START taken_branch(0);
+#define AT12 AT AT AT AT AT AT AT AT AT AT AT AT; // 12 taken branch
+
+FORCE_INLINE void taken_branch(int ctrl) {
+  if (ctrl)
+    asm("nop");
 }

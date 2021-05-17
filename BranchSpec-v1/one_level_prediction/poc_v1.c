@@ -1,4 +1,4 @@
-#include "include/util.h"
+#include "../../include/util.h"
 
 unsigned int array_size = 2;
 uint8_t unused1[64]; // Unused variable to place "array" in different cacheline from "array_size"

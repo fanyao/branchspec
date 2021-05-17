@@ -16,30 +16,21 @@ This repository contains proof-of-concept of information leakage attacks exploit
 
 ## Variants
 
-This repository contains two PoCs, each of which exploits a different code gadget.
+This repository contains PoC code for both one-level prediction and history-based prediction attacks using BranchSpec-v1, gadget search tool for BranchSpec-v2 and utilites to determine condition for GHR flushing in history-based prediction and activation condition of history-based prediction.
 
-#### Variant 1: **poc_v1**
-
-Nested speculation followed by <code>if</code> branch
-```c
-if (x < array_size) {
-    if (array[x]) {
-        <some_function>
-    }
-}
-```
-
-#### Variant 2: **poc_v2**
-
-Nested speculation followed by <code>for</code> loop
-```c
-for (int i = x; i < array_size; i++) {
-    if (array[i]) {
-        <some_function>
-    }
-    <some_additional_functions>
-}
-```
+## Contents:
+- BranchSpec-v1
+    - one_level_prediction
+        - PoC v1: Nested if conditional, single-threaded
+        - PoC v2: Nested for loop, multi-threaded
+    - history_based_prediction
+        - PoC v1: Nested if conditional, multi-threaded
+        - PoC v2: Nested if conditional, calibration
+- BranchSpec-v2
+    - Gadget search tool 
+- Utils
+    - GHR Flush: Determine GHR flush length
+    - History-based prediction activation: Determine activation criterion for history-based prediction
 
 
 ## Building
@@ -58,7 +49,7 @@ Steps to reproduce the vulnerability:
 git clone https://github.com/fanyao/branchspec
 
 # cd into the source directory
-cd branchspec
+cd branchspec/one_level_prediction
 
 # build the binaries
 make all
@@ -67,7 +58,7 @@ make all
 taskset 0x02 ./poc_v1
 ```
 
-Note: Change the <code>THRESHOLD</code> in line 36 of the source file (i.e., poc_v1/poc_v2) according to your system
+Note: Change the <code>THRESHOLD</code> in line 36 of the source file (i.e., BranchSpec-v1>one_level_prediction>poc_v1/BranchSpec-v1>one_level_prediction>poc_v2) according to your system
 
 ## Example output
 
@@ -184,7 +175,7 @@ Total bit sent: 100, Total Error: 0, Threshold: 138
 
 ## Paper
 
-More details about this work can be found in our [paper](http://fan-yao.com/paper/2020_ICCD_branchspec.pdf).
+More details about BranchSpec-v1 based one-level prediction in this work can be found in our [paper](http://fan-yao.com/paper/2020_ICCD_branchspec.pdf).
 
 ## Citing BranchSpec
 
