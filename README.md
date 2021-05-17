@@ -58,7 +58,7 @@ make all
 taskset 0x02 ./poc_v1
 ```
 
-Note: Change the <code>THRESHOLD</code> in line 36 of the source file (i.e., BranchSpec-v1>one_level_prediction>poc_v1/BranchSpec-v1>one_level_prediction>poc_v2) according to your system
+Note: Change the <code>THRESHOLD</code> in line 36 of the source file (i.e., BranchSpec-v1>one_level_prediction>poc_v1.c) according to your system.
 
 ## Example output
 

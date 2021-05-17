@@ -39,4 +39,4 @@ make all
 taskset 0x02 ./poc_v1
 ```
 
-Note: Change the <code>THRESHOLD</code> in line 36 of the source file (i.e., poc_v1/poc_v2) according to your system
+Note: Change the <code>THRESHOLD</code> in line 36 of the source file (i.e., poc_v1.c/poc_v2.c) according to your system.
