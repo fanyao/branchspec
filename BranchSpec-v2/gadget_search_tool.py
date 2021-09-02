@@ -143,6 +143,29 @@ def checkMemOperand(key):
     return False
 
 
+def isDigit(code):
+    try:
+        digit = int(code,16)
+        return True
+    except:
+        return False
+    
+def decodeOpcode(code):
+    tmp = []
+    if (":" in code.split()[0]) and (isDigit(code.split()[0].split(':')[0])):
+        opcode = code.split(":")[1]
+        for i in opcode.split():
+            if not isDigit(i): break
+            if len(i) > 2: break
+            if (int(i,16) < 0): 
+                break
+            if (int(i,16) > 256):
+                break
+            tmp.append(int(i,16))
+            opcodes.append(int(i,16))
+    return tmp
+
+
 binary_file = "<SET_BINARY_FILE_LOCATION>"
 
 with open(binary_file, 'rb') as f:
