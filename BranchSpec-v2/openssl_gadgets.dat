@@ -2,13 +2,24 @@
 
 LINE    OFFSET          CODE                    ASM
 62812: 87c:     f6 0a 00                test   BYTE PTR [rdx],0x0
+112015:    1209:        f7 02 3c 00 00 00       test   DWORD PTR [rdx],0x3c
 122904:    10b6:        f7 02 00 00 00 00       test   DWORD PTR [rdx],0x0
+184712: 200:    f6 02 28                test   BYTE PTR [rdx],0x28
 306088:    114e:        f7 0a 00 00 00 00       test   DWORD PTR [rdx],0x0
 307494: 1c8:    f7 0a 00 00 00 00       test   DWORD PTR [rdx],0x0
 427643:     234:        f6 02 00                test   BYTE PTR [rdx],0x0
+466865:    3c48:        f6 02 56                test   BYTE PTR [rdx],0x56
+482807: ab0:    f6 02 78                test   BYTE PTR [rdx],0x78
 495513:     234:        f6 02 00                test   BYTE PTR [rdx],0x0
 546011:     ae5:        f6 0a 00                test   BYTE PTR [rdx],0x0
+574499:    2252:        f7 02 60 00 00 00       test   DWORD PTR [rdx],0x60
+591440:    10c8:        f7 02 00 00 03 91       test   DWORD PTR [rdx],0x91030000
+591446:    10d8:        f7 02 00 00 03 91       test   DWORD PTR [rdx],0x91030000
+591451:    10e8:        f7 02 00 00 03 91       test   DWORD PTR [rdx],0x91030000
+649313: c0e:    f7 02 23 00 00 00       test   DWORD PTR [rdx],0x23
+656273:     9c8:        f6 02 b3                test   BYTE PTR [rdx],0xb3
 707051:     ae7:        f6 0a 00                test   BYTE PTR [rdx],0x0
+735757:    1596:        f7 02 43 00 00 00       test   DWORD PTR [rdx],0x43
 771093:     c19:        f7 02 00 00 00 00       test   DWORD PTR [rdx],0x0
 813475:    2bd2:        f7 02 00 00 00 00       test   DWORD PTR [rdx],0x0
 813480:    2bed:        f7 02 00 00 00 00       test   DWORD PTR [rdx],0x0
@@ -19,26 +30,62 @@ LINE    OFFSET          CODE                    ASM
 929345:    1b22:        f7 02 00 00 00 00       test   DWORD PTR [rdx],0x0
 929349:    1b2e:        f7 02 00 00 00 00       test   DWORD PTR [rdx],0x0
 1021616:     9a2:       f6 0a 00                test   BYTE PTR [rdx],0x0
+1118652: 9e4:   f6 02 61                test   BYTE PTR [rdx],0x61
 1121266:     234:       f6 02 00                test   BYTE PTR [rdx],0x0
+1122372:     d6b:       f6 02 84                test   BYTE PTR [rdx],0x84
+1141058:    2b8b:       f6 02 ef                test   BYTE PTR [rdx],0xef
+1141063:    2b96:       f6 02 cb                test   BYTE PTR [rdx],0xcb
+1178861:    10b4:       f6 02 ec                test   BYTE PTR [rdx],0xec
+1179308:    1490:       f6 02 15                test   BYTE PTR [rdx],0x15
 1200816:    2241:       f7 0a 00 00 00 00       test   DWORD PTR [rdx],0x0
 1200882:    22e4:       f7 0a 00 00 00 00       test   DWORD PTR [rdx],0x0
+1208546:    10e4:       f6 02 0c                test   BYTE PTR [rdx],0xc
+1223174:    158f:       f6 02 18                test   BYTE PTR [rdx],0x18
+1247400:    119b:       f6 02 23                test   BYTE PTR [rdx],0x23
+1248896:    20d0:       f6 02 3f                test   BYTE PTR [rdx],0x3f
+1285108:     2ec:       f7 02 00 00 0d 38       test   DWORD PTR [rdx],0x380d0000
+1285960:     ad4:       f7 02 67 00 00 00       test   DWORD PTR [rdx],0x67
+1310540: 235:   f6 02 2b                test   BYTE PTR [rdx],0x2b
+1319233:    258d:       f7 02 57 00 00 00       test   DWORD PTR [rdx],0x57
 1321007:     bc8:       f7 0a 00 00 00 00       test   DWORD PTR [rdx],0x0
 1339857:     aec:       f6 0a 00                test   BYTE PTR [rdx],0x0
 1339893:     b41:       f6 0a 00                test   BYTE PTR [rdx],0x0
+1340186:     dce:       f6 02 cb                test   BYTE PTR [rdx],0xcb
+1355753:     e1c:       f6 02 ff                test   BYTE PTR [rdx],0xff
+1369757:     e58:       f6 02 0b                test   BYTE PTR [rdx],0xb
+1376685:     f18:       f6 02 b5                test   BYTE PTR [rdx],0xb5
+1393582:     e62:       f6 02 cb                test   BYTE PTR [rdx],0xcb
 1398857:     af1:       26 f6 0a 00             test   BYTE PTR es:[rdx],0x0
+1399209:     dc9:       f6 02 ce                test   BYTE PTR [rdx],0xce
+1495759:    1d91:       f6 02 e1                test   BYTE PTR [rdx],0xe1
+1532227:     bce:       f6 02 7d                test   BYTE PTR [rdx],0x7d
+1574134:    150a:       f6 02 dc                test   BYTE PTR [rdx],0xdc
 1763229:   20429:       f6 0a 00                test   BYTE PTR [rdx],0x0
 1763321:   20501:       f6 0a 00                test   BYTE PTR [rdx],0x0
 1763402:   205bf:       f6 0a 00                test   BYTE PTR [rdx],0x0
 1763477:   20673:       f6 0a 00                test   BYTE PTR [rdx],0x0
 1763547:   2071c:       f6 0a 00                test   BYTE PTR [rdx],0x0
 1763600:   207a1:       f6 0a 00                test   BYTE PTR [rdx],0x0
+1821382:     872:       f6 02 fb                test   BYTE PTR [rdx],0xfb
+1887702:    1a9a:       f6 02 e1                test   BYTE PTR [rdx],0xe1
 1897213:     b02:       f7 02 00 00 00 00       test   DWORD PTR [rdx],0x0
 1897343:     c43:       f7 02 00 00 00 00       test   DWORD PTR [rdx],0x0
+1963653:     d08:       f6 02 02                test   BYTE PTR [rdx],0x2
+1963911:    1045:       f6 02 04                test   BYTE PTR [rdx],0x4
+1984773:    1635:       f6 02 02                test   BYTE PTR [rdx],0x2
+2114605:    3511:       f7 02 58 be 31 c6       test   DWORD PTR [rdx],0xc631be58
+2119457:    6582:       f6 02 d9                test   BYTE PTR [rdx],0xd9
+2132999:    ecd0:       f7 02 98 e6 73 8c       test   DWORD PTR [rdx],0x8c73e698
+2133943:    f648:       f7 0a d1 e8 76 52       test   DWORD PTR [rdx],0x5276e8d1
+2139886:   1320b:       f6 02 3f                test   BYTE PTR [rdx],0x3f
+2151470:   1a5ff:       f7 02 64 b4 a9 04       test   DWORD PTR [rdx],0x4a9b464
 2202010:     772:       f6 0a 00                test   BYTE PTR [rdx],0x0
 2202050:     7d8:       f6 0a 00                test   BYTE PTR [rdx],0x0
+2240973:    28d4:       f7 02 68 0d 00 00       test   DWORD PTR [rdx],0xd68
 2264156:     234:       f6 02 00                test   BYTE PTR [rdx],0x0
 2280269:     5b7:       f6 0a 00                test   BYTE PTR [rdx],0x0
 2280281:     5cf:       f6 0a 00                test   BYTE PTR [rdx],0x0
+2290885: 252:   f7 02 80 00 00 00       test     DWORD PTR [rdx],0x80
 2291433:     234:       f6 02 00                test   BYTE PTR [rdx],0x0
 2296339:     234:       f6 02 00                test   BYTE PTR [rdx],0x0
 2296409:     2eb:       f6 02 00                test   BYTE PTR [rdx],0x0
@@ -59,8 +106,10 @@ LINE    OFFSET          CODE                    ASM
 2440352:    1ddd:       f7 0a 00 00 00 00       test   DWORD PTR [rdx],0x0
 2489757:    31f7:       f7 0a 00 00 00 00       test   DWORD PTR [rdx],0x0
 2489761:    3202:       f7 0a 00 00 00 00       test   DWORD PTR [rdx],0x0
+2578518: 120:   f7 02 00 00 01 00       test   DWORD PTR [rdx],0x10000
 2578624: 3c0:   f6 02 00                test   BYTE PTR [rdx],0x0
 2600620:    15f0:       f6 02 00                test   BYTE PTR [rdx],0x0
+2610697: 2dc:   f7 02 45 13 84 3a       test   DWORD PTR [rdx],0x3a841345
 2628365: 314:   f6 02 00                test   BYTE PTR [rdx],0x0
 2682941:    267e:       f6 02 00                test   BYTE PTR [rdx],0x0
 2683140:    2838:       f6 02 00                test   BYTE PTR [rdx],0x0
@@ -69,6 +118,8 @@ LINE    OFFSET          CODE                    ASM
 2722828: c02:   f7 02 00 00 00 00       test   DWORD PTR [rdx],0x0
 2722832: c0d:   f7 02 00 00 00 00       test   DWORD PTR [rdx],0x0
 2735185:     abd:       f6 0a 00                test   BYTE PTR [rdx],0x0
+2877514:    12b1:       f6 02 2d                test   BYTE PTR [rdx],0x2d
+2878690:    1d88:       f7 02 91 1d 00 00       test   DWORD PTR [rdx],0x1d91
 2922219:     1bb:       f7 02 00 00 00 00       test   DWORD PTR [rdx],0x0
 2966253:      3c:       f6 02 00                test   BYTE PTR [rdx],0x0
 2966389:     194:       f6 02 00                test   BYTE PTR [rdx],0x0
@@ -81,12 +132,22 @@ LINE    OFFSET          CODE                    ASM
 3102275:    1aad:       f7 02 00 00 00 00       test   DWORD PTR [rdx],0x0
 3102284:    1ad1:       f7 02 00 00 00 00       test   DWORD PTR [rdx],0x0
 3102293:    1af4:       f7 02 00 00 00 00       test   DWORD PTR [rdx],0x0
+3179444:     eaf:       f6 02 7e                test   BYTE PTR [rdx],0x7e
+3217134:     94a:       f6 02 6f                test   BYTE PTR [rdx],0x6f
 3322979:    593b:       f7 02 00 00 00 00       test   DWORD PTR [rdx],0x0
 3322983:    5946:       f7 02 00 00 00 00       test   DWORD PTR [rdx],0x0
+3347291:    26be:       f7 02 35 00 00 00       test   DWORD PTR [rdx],0x35
 3471630: a3f:   f7 0a 00 00 00 00       test   DWORD PTR [rdx],0x0
+3471639: a55:   f7 0a 00 00 18 70       test   DWORD PTR [rdx],0x70180000
 3560571:    1072:       f6 02 00                test   BYTE PTR [rdx],0x0
+3619705: 6d9:   f7 02 26 15 75 84       test   DWORD PTR [rdx],0x84751526
 3691871:    52a1:       f7 0a 00 00 00 00       test   DWORD PTR [rdx],0x0
+3703147:    174f:       f6 02 07                test   BYTE PTR [rdx],0x7
+3704852:    2742:       f6 02 a9                test   BYTE PTR [rdx],0xa9
+3704862:    2759:       f6 02 a1                test   BYTE PTR [rdx],0xa1
+3704871:    2771:       f7 02 66 10 00 00       test   DWORD PTR [rdx],0x1066
 3824072:     bb0:       f6 0a 00                test   BYTE PTR [rdx],0x0
+3982897:     c34:       f6 02 de                test   BYTE PTR [rdx],0xde
 3985779: 7e1:   f6 02 00                test   BYTE PTR [rdx],0x0
 4003139:     5b7:       f6 0a 00                test   BYTE PTR [rdx],0x0
 4003157:     5db:       f6 0a 00                test   BYTE PTR [rdx],0x0
@@ -100,12 +161,22 @@ LINE    OFFSET          CODE                    ASM
 4017919:    11a1:       f7 0a 00 00 00 00       test   DWORD PTR [rdx],0x0
 4020507:   0:   f7 0a 00 00 00 00       test   DWORD PTR [rdx],0x0
 4085186:    2f4c:       f7 0a 00 00 00 00       test   DWORD PTR [rdx],0x0
+4133222:    56bf:       f7 02 6f 00 00 00       test   DWORD PTR [rdx],0x6f
 4138698:    30bd:       f6 02 00                test   BYTE PTR [rdx],0x0
+4181536:    10ec:       f6 02 9c                test   BYTE PTR [rdx],0x9c
+4240065:    12cb:       f6 02 78                test   BYTE PTR [rdx],0x78
+4241278:    1dec:       f6 02 36                test   BYTE PTR [rdx],0x36
+4246436:    50c3:       f7 02 61 00 00 00       test   DWORD PTR [rdx],0x61
+4272906:    119b:       f6 02 ac                test   BYTE PTR [rdx],0xac
 4321643:    4d91:       f7 0a 00 00 00 00       test   DWORD PTR [rdx],0x0
 4321647:    4d9c:       f7 0a 00 00 00 00       test   DWORD PTR [rdx],0x0
+4337303:    1cef:       f7 02 52 00 00 00       test   DWORD PTR [rdx],0x52
+4363192:    304c:       f7 02 53 00 00 00       test   DWORD PTR [rdx],0x53
 4363820:      58:       f6 02 00                test   BYTE PTR [rdx],0x0
 4363874:      e0:       f6 02 00                test   BYTE PTR [rdx],0x0
 4364012:     22c:       f6 02 00                test   BYTE PTR [rdx],0x0
+4438181:    141e:       f6 02 9d                test   BYTE PTR [rdx],0x9d
+4449347:    1d42:       f6 02 0b                test   BYTE PTR [rdx],0xb
 4556758:    8189:       f7 02 00 00 00 00       test   DWORD PTR [rdx],0x0
 4556956:    8372:       f7 02 00 00 00 00       test   DWORD PTR [rdx],0x0
 4556993:    83d8:       f7 02 00 00 00 00       test   DWORD PTR [rdx],0x0
@@ -113,26 +184,1044 @@ LINE    OFFSET          CODE                    ASM
 4557171:    8568:       f7 02 00 00 00 00       test   DWORD PTR [rdx],0x0
 4557210:    85c8:       f7 02 00 00 00 00       test   DWORD PTR [rdx],0x0
 4564730:     388:       f7 0a 00 00 00 00       test   DWORD PTR [rdx],0x0
+4579542:     ad0:       f6 02 5f                test   BYTE PTR [rdx],0x5f
 4591957:     53b:       f6 0a 00                test   BYTE PTR [rdx],0x0
+4696494:    21aa:       f6 02 3f                test   BYTE PTR [rdx],0x3f
+4711163:    1211:       f6 02 f5                test   BYTE PTR [rdx],0xf5
+4738596: 919:   f6 02 03                test   BYTE PTR [rdx],0x3
+4759530:    1c87:       f6 02 13                test   BYTE PTR [rdx],0x13
 4775193:    32ed:       f7 02 00 00 00 00       test   DWORD PTR [rdx],0x0
 4775197:    32fb:       f7 02 00 00 00 00       test   DWORD PTR [rdx],0x0
 4775282:    33ca:       f7 02 00 00 00 00       test   DWORD PTR [rdx],0x0
 4802421:     c0d:       f6 02 00                test   BYTE PTR [rdx],0x0
 4802432:     c32:       f6 02 00                test   BYTE PTR [rdx],0x0
+4810458:    129c:       f6 02 94                test   BYTE PTR [rdx],0x94
+4826880:    37c7:       f7 02 56 00 00 00       test   DWORD PTR [rdx],0x56
+4978128:    2145:       f6 02 18                test   BYTE PTR [rdx],0x18
+5026215:     d39:       f6 02 fe                test   BYTE PTR [rdx],0xfe
 5036837:    1505:       f6 02 00                test   BYTE PTR [rdx],0x0
 5041756:     42a:       f6 02 00                test   BYTE PTR [rdx],0x0
 5041811:     4b5:       f6 02 00                test   BYTE PTR [rdx],0x0
+5054144:    173a:       f6 02 b3                test   BYTE PTR [rdx],0xb3
+5084056:    35a0:       f6 02 40                test   BYTE PTR [rdx],0x40
 5123099:     f6e:       f6 02 00                test   BYTE PTR [rdx],0x0
 5123122:     fb7:       f6 02 00                test   BYTE PTR [rdx],0x0
 5124922:    2378:       f7 0a 00 00 00 00       test   DWORD PTR [rdx],0x0
 5124926:    2384:       f7 0a 00 00 00 00       test   DWORD PTR [rdx],0x0
-1963653:     d08:       f6 02 02                test   BYTE PTR [rdx],0x2
-1984773:    1635:       f6 02 02                test   BYTE PTR [rdx],0x2
-1963911:    1045:       f6 02 04                test   BYTE PTR [rdx],0x4
 5131806: 2c4:   f7 02 20 00 00 00       test   DWORD PTR [rdx],0x20
 5131957: 4f4:   f7 02 20 00 00 00       test   DWORD PTR [rdx],0x20
 5132111: 724:   f7 02 20 00 00 00       test   DWORD PTR [rdx],0x20
 5132214: 8a4:   f7 02 20 00 00 00       test   DWORD PTR [rdx],0x20
 5132317: a24:   f7 02 20 00 00 00       test   DWORD PTR [rdx],0x20
-5084056:    35a0:       f6 02 40                test   BYTE PTR [rdx],0x40
-2290885: 252:   f7 02 80 00 00 00       test     DWORD PTR [rdx],0x80
+
+
+6339: 2b7:	f7 00 00 00 08 eb    	test   DWORD PTR [rax],0xeb080000
+6770:   0:	f6 00 00             	test   BYTE PTR [rax],0x0
+10746:     945:	f7 08 00 00 00 00    	test   DWORD PTR [rax],0x0
+40886: 99f:	f7 00 ec bc 50 51    	test   DWORD PTR [rax],0x5150bcec
+43585:     508:	f6 00 f6             	test   BYTE PTR [rax],0xf6
+57926:    6d05:	f7 08 00 00 00 00    	test   DWORD PTR [rax],0x0
+79296: 1c6:	f6 00 00             	test   BYTE PTR [rax],0x0
+124626: 1c3:	f6 00 02             	test   BYTE PTR [rax],0x2
+124730: 2eb:	f6 00 02             	test   BYTE PTR [rax],0x2
+184670: 195:	f6 08 3d             	test   BYTE PTR [rax],0x3d
+202085: 24a:	f6 00 00             	test   BYTE PTR [rax],0x0
+236382:     9b6:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+236386:     9c1:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+335748: 982:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+335752: 98d:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+345429:     91e:	f7 08 00 00 1a fd    	test   DWORD PTR [rax],0xfd1a0000
+361911: 1d0:	f7 00 f2 08 b1 08    	test   DWORD PTR [rax],0x8b108f2
+390311:    27f7:	f6 00 01             	test   BYTE PTR [rax],0x1
+390949:    325f:	f6 00 01             	test   BYTE PTR [rax],0x1
+391559:    3c17:	f6 00 01             	test   BYTE PTR [rax],0x1
+423861: c4d:	f6 00 02             	test   BYTE PTR [rax],0x2
+438353: 409:	f6 08 60             	test   BYTE PTR [rax],0x60
+447419: 289:	48 f7 00 06 03 00 00 	test   QWORD PTR [rax],0x306
+447724: 6fe:	48 f7 00 06 03 00 00 	test   QWORD PTR [rax],0x306
+448005: b6e:	48 f7 00 06 03 00 00 	test   QWORD PTR [rax],0x306
+453544:     f19:	f6 00 00             	test   BYTE PTR [rax],0x0
+454020:    136d:	f6 00 00             	test   BYTE PTR [rax],0x0
+503943: 701:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+503947: 70c:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+504035: 7d8:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+504039: 7e3:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+526839: af7:	f7 08 00 00 00 00    	test   DWORD PTR [rax],0x0
+554080: 10d:	f6 00 00             	test   BYTE PTR [rax],0x0
+554092: 12e:	f6 00 00             	test   BYTE PTR [rax],0x0
+571520:     534:	f6 00 00             	test   BYTE PTR [rax],0x0
+571664:     652:	f6 00 00             	test   BYTE PTR [rax],0x0
+575642:     5c4:	f6 08 00             	test   BYTE PTR [rax],0x0
+575829:     76a:	f6 08 00             	test   BYTE PTR [rax],0x0
+603314:    5c2d:	f7 00 9f 18 0e 00    	test   DWORD PTR [rax],0xe189f
+603335:    5c5d:	f7 00 9f 00 00 00    	test   DWORD PTR [rax],0x9f
+633657:     e8f:	f7 00 00 07 08 3b    	test   DWORD PTR [rax],0x3b080700
+667143:    3326:	f6 08 00             	test   BYTE PTR [rax],0x0
+667194:    33a0:	f6 08 00             	test   BYTE PTR [rax],0x0
+667311:    34ab:	f6 08 00             	test   BYTE PTR [rax],0x0
+667492:    364c:	f6 08 00             	test   BYTE PTR [rax],0x0
+695520:     697:	f7 00 00 00 19 6d    	test   DWORD PTR [rax],0x6d190000
+695664:     7c3:	f7 00 00 00 19 b0    	test   DWORD PTR [rax],0xb0190000
+695693:     806:	f7 00 00 00 19 b0    	test   DWORD PTR [rax],0xb0190000
+696168:     ca2:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+696204:     cfa:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+696633:    1152:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+697321:    1822:	f7 00 00 00 2a 62    	test   DWORD PTR [rax],0x622a0000
+697397:    18d2:	f7 00 00 00 2c 00    	test   DWORD PTR [rax],0x2c0000
+697401:    18de:	f7 00 00 00 2a 62    	test   DWORD PTR [rax],0x622a0000
+697438:    1934:	f7 00 00 00 42 62    	test   DWORD PTR [rax],0x62420000
+697798:    1c9b:	f7 00 00 00 00 4d    	test   DWORD PTR [rax],0x4d000000
+699630:     c9c:	f6 08 00             	test   BYTE PTR [rax],0x0
+699845:     e90:	f6 08 00             	test   BYTE PTR [rax],0x0
+792366:    293a:	f7 08 00 00 00 00    	test   DWORD PTR [rax],0x0
+798824: 6d2:	f7 08 00 00 10 0d    	test   DWORD PTR [rax],0xd100000
+798828: 6de:	f7 08 00 00 18 0d    	test   DWORD PTR [rax],0xd180000
+799087: 943:	f7 08 00 00 00 07    	test   DWORD PTR [rax],0x7000000
+799287: ac6:	f7 08 00 00 00 07    	test   DWORD PTR [rax],0x7000000
+802171: 6d2:	f7 08 00 00 10 0d    	test   DWORD PTR [rax],0xd100000
+802175: 6de:	f7 08 00 00 18 0d    	test   DWORD PTR [rax],0xd180000
+802434: 943:	f7 08 00 00 00 07    	test   DWORD PTR [rax],0x7000000
+802634: ac6:	f7 08 00 00 00 07    	test   DWORD PTR [rax],0x7000000
+870751:  40:	f6 00 01             	test   BYTE PTR [rax],0x1
+904327:  10:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+985894:     58e:	f6 08 00             	test   BYTE PTR [rax],0x0
+985901:     59d:	f6 08 00             	test   BYTE PTR [rax],0x0
+993320:    2f8a:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+993851:   0:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+1013030: 1e0:	f6 08 a2             	test   BYTE PTR [rax],0xa2
+1048902:    11af:	f6 00 76             	test   BYTE PTR [rax],0x76
+1049280:    1554:	f7 00 f7 f7 00 b6    	test   DWORD PTR [rax],0xb600f7f7
+1049504:    178d:	f7 00 f7 d6 d6 d6    	test   DWORD PTR [rax],0xd6d6d6f7
+1049520:    17c5:	f6 00 f6             	test   BYTE PTR [rax],0xf6
+1050237:    1e9a:	f6 00 bd             	test   BYTE PTR [rax],0xbd
+1064202:    1c3d:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+1124019: 1e7:	f6 08 2e             	test   BYTE PTR [rax],0x2e
+1162166:    1cf7:	f7 00 24 00 00 00    	test   DWORD PTR [rax],0x24
+1181575:    2979:	f6 00 29             	test   BYTE PTR [rax],0x29
+1182999:     261:	f6 08 00             	test   BYTE PTR [rax],0x0
+1183557:     85c:	f6 08 00             	test   BYTE PTR [rax],0x0
+1274965: 3a5:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+1274969: 3b0:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+1326712: 7d0:	f7 08 00 00 18 00    	test   DWORD PTR [rax],0x180000
+1330433: dbe:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+1332944:  24:	f7 00 00 00 00 42    	test   DWORD PTR [rax],0x42000000
+1348509:     db8:	f6 00 22             	test   BYTE PTR [rax],0x22
+1371871: 252:	f6 08 90             	test   BYTE PTR [rax],0x90
+1385553:     9c4:	f7 08 00 00 10 09    	test   DWORD PTR [rax],0x9100000
+1398657:     924:	f7 08 00 00 18 07    	test   DWORD PTR [rax],0x7180000
+1423024:     20e:	f6 00 00             	test   BYTE PTR [rax],0x0
+1423255:     435:	f6 00 00             	test   BYTE PTR [rax],0x0
+1423564:     766:	f6 00 00             	test   BYTE PTR [rax],0x0
+1423693:     899:	f6 00 00             	test   BYTE PTR [rax],0x0
+1423877:     a45:	f6 00 00             	test   BYTE PTR [rax],0x0
+1424389:     ee6:	f6 00 00             	test   BYTE PTR [rax],0x0
+1424548:    1096:	f6 00 00             	test   BYTE PTR [rax],0x0
+1424557:    10a8:	f6 00 00             	test   BYTE PTR [rax],0x0
+1424925:    13f8:	f6 00 00             	test   BYTE PTR [rax],0x0
+1502415:     6ca:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+1502659:     90c:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+1517600: 182:	f7 08 31 59 3b 3d    	test   DWORD PTR [rax],0x3d3b5931
+1560080:   8:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+1617014:   8:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+1662861:     3b7:	f6 08 00             	test   BYTE PTR [rax],0x0
+1665207: 339:	f6 08 3d             	test   BYTE PTR [rax],0x3d
+1679562:     186:	f6 00 97             	test   BYTE PTR [rax],0x97
+1680040:     636:	f6 00 97             	test   BYTE PTR [rax],0x97
+1683154:    258e:	f6 00 fa             	test   BYTE PTR [rax],0xfa
+1684824:    36c2:	f6 00 14             	test   BYTE PTR [rax],0x14
+1687699:    5416:	f6 00 3d             	test   BYTE PTR [rax],0x3d
+1687936:    5672:	f7 00 54 40 83 00    	test   DWORD PTR [rax],0x834054
+1688174:    58ee:	f6 00 76             	test   BYTE PTR [rax],0x76
+1688285:    59f2:	f6 00 2b             	test   BYTE PTR [rax],0x2b
+1689765:    68fe:	f6 00 b7             	test   BYTE PTR [rax],0xb7
+1691082:    7696:	f7 00 5c fa 30 01    	test   DWORD PTR [rax],0x130fa5c
+1792651:     403:	26 f7 00 00 00 03 00 	test   DWORD PTR es:[rax],0x30000
+1824321:    2742:	f7 00 b2 5b a1 06    	test   DWORD PTR [rax],0x6a15bb2
+1828377:    5162:	f7 00 17 da 4b 08    	test   DWORD PTR [rax],0x84bda17
+1844949: 32f:	f6 00 02             	test   BYTE PTR [rax],0x2
+1857105:    148a:	f7 00 27 00 00 00    	test   DWORD PTR [rax],0x27
+1893838:    55c0:	f7 00 33 00 00 00    	test   DWORD PTR [rax],0x33
+1926591: 52b:	f7 08 83 02 26 0d    	test   DWORD PTR [rax],0xd260283
+1933533:  fd:	f6 00 00             	test   BYTE PTR [rax],0x0
+1933645: 229:	f6 00 00             	test   BYTE PTR [rax],0x0
+1939353:    1578:	f7 00 61 08 ba bb    	test   DWORD PTR [rax],0xbbba0861
+1949065:     177:	f7 08 00 00 00 00    	test   DWORD PTR [rax],0x0
+1983824:     91e:	f6 00 02             	test   BYTE PTR [rax],0x2
+2027717:  2f:	f6 00 01             	test   BYTE PTR [rax],0x1
+2027733:  70:	f6 00 01             	test   BYTE PTR [rax],0x1
+2027783: 11a:	f6 00 01             	test   BYTE PTR [rax],0x1
+2027798: 150:	f6 00 01             	test   BYTE PTR [rax],0x1
+2027835: 1cf:	f6 00 01             	test   BYTE PTR [rax],0x1
+2027851: 210:	f6 00 01             	test   BYTE PTR [rax],0x1
+2096740:    1585:	f6 00 00             	test   BYTE PTR [rax],0x0
+2132025:    e336:	f6 08 5b             	test   BYTE PTR [rax],0x5b
+2141090:   13da6:	f7 08 80 03 33 79    	test   DWORD PTR [rax],0x79330380
+2153124:   1b6ad:	66 f7 00 77 45       	test   WORD PTR [rax],0x4577
+2153758:   1bd3f:	f7 00 f6 91 e9 17    	test   DWORD PTR [rax],0x17e991f6
+2231065: 3b2:	f6 08 cb             	test   BYTE PTR [rax],0xcb
+2242473:    3938:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+2259841: 40c:	f7 00 00 00 00 42    	test   DWORD PTR [rax],0x42000000
+2400678: 275:	f7 00 9e 04 02 03    	test   DWORD PTR [rax],0x302049e
+2400687: 291:	f7 00 9e 04 02 03    	test   DWORD PTR [rax],0x302049e
+2400736: 30d:	f7 00 9e 04 02 03    	test   DWORD PTR [rax],0x302049e
+2400797: 3c2:	f6 00 02             	test   BYTE PTR [rax],0x2
+2400822: 401:	4a f6 00 02          	rex.WX test BYTE PTR [rax],0x2
+2400852: 448:	f6 00 02             	test   BYTE PTR [rax],0x2
+2414022:    10a6:	f6 08 00             	test   BYTE PTR [rax],0x0
+2441010: 29d:	f7 08 15 59 3b 3d    	test   DWORD PTR [rax],0x3d3b5915
+2456158:      c2:	f7 00 00 00 0a 00    	test   DWORD PTR [rax],0xa0000
+2464421:    1bb1:	f6 00 26             	test   BYTE PTR [rax],0x26
+2546431: 531:	f6 08 a0             	test   BYTE PTR [rax],0xa0
+2613865:   0:	f6 00 00             	test   BYTE PTR [rax],0x0
+2786860: 2d0:	f6 08 6c             	test   BYTE PTR [rax],0x6c
+2837893: 442:	f6 00 00             	test   BYTE PTR [rax],0x0
+2838144: 1a4:	f6 08 94             	test   BYTE PTR [rax],0x94
+2871913: 8ec:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+2871917: 8f7:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+2925226:    1baf:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+2968572:    16b5:	f7 08 00 00 00 00    	test   DWORD PTR [rax],0x0
+3035454:    2624:	f7 08 00 00 00 00    	test   DWORD PTR [rax],0x0
+3037419: 57d:	f6 00 02             	test   BYTE PTR [rax],0x2
+3073704:    5719:	f6 00 00             	test   BYTE PTR [rax],0x0
+3073719:    573a:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+3092214:    5254:	f7 08 00 00 00 00    	test   DWORD PTR [rax],0x0
+3092218:    525f:	f7 08 00 00 00 00    	test   DWORD PTR [rax],0x0
+3107892:  c6:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+3107982: 1ab:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+3108833:  24:	f7 00 00 00 00 42    	test   DWORD PTR [rax],0x42000000
+3127984: 281:	f7 08 12 94 03 32    	test   DWORD PTR [rax],0x32039412
+3175609: 25b:	f6 00 58             	test   BYTE PTR [rax],0x58
+3261579:    2435:	f7 08 00 00 00 00    	test   DWORD PTR [rax],0x0
+3284266:     be2:	f6 08 00             	test   BYTE PTR [rax],0x0
+3328526:   0:	f6 08 00             	test   BYTE PTR [rax],0x0
+3354189:  57:	f6 00 00             	test   BYTE PTR [rax],0x0
+3354672: 17a:	f7 08 17 37 74 f7    	test   DWORD PTR [rax],0xf7743717
+3366866:    19a0:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+3421976:     bcd:	f6 00 00             	test   BYTE PTR [rax],0x0
+3492932: 8e0:	f7 08 00 00 08 0c    	test   DWORD PTR [rax],0xc080000
+3492995: 969:	f7 08 00 00 30 00    	test   DWORD PTR [rax],0x300000
+3509333: 1df:	f6 08 30             	test   BYTE PTR [rax],0x30
+3547960:    18a1:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+3547964:    18ac:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+3581620: 140:	f7 00 00 00 00 41    	test   DWORD PTR [rax],0x41000000
+3606401:     b19:	f6 00 00             	test   BYTE PTR [rax],0x0
+3623360:     10e:	f7 00 00 00 0b 00    	test   DWORD PTR [rax],0xb0000
+3623370:     12f:	f7 00 00 00 0b 00    	test   DWORD PTR [rax],0xb0000
+3647961:    1716:	f6 08 00             	test   BYTE PTR [rax],0x0
+3675446: 634:	f6 00 00             	test   BYTE PTR [rax],0x0
+3719634: 6cb:	f6 08 24             	test   BYTE PTR [rax],0x24
+3805105: 3cf:	f7 08 50 08 43 08    	test   DWORD PTR [rax],0x8430850
+3805178: 489:	f7 08 50 08 43 08    	test   DWORD PTR [rax],0x8430850
+3813180: 258:	f6 00 82             	test   BYTE PTR [rax],0x82
+3822171:    38a8:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+3837230:     d73:	f7 00 1f 00 00 00    	test   DWORD PTR [rax],0x1f
+3884459:    6e80:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+3971154: 3bf:	f6 08 5e             	test   BYTE PTR [rax],0x5e
+3985635: 67b:	f6 00 00             	test   BYTE PTR [rax],0x0
+3989275:  24:	f6 00 00             	test   BYTE PTR [rax],0x0
+4023004: 6d2:	f7 08 00 00 10 0d    	test   DWORD PTR [rax],0xd100000
+4023008: 6de:	f7 08 00 00 18 0d    	test   DWORD PTR [rax],0xd180000
+4023267: 943:	f7 08 00 00 00 07    	test   DWORD PTR [rax],0x7000000
+4023467: ac6:	f7 08 00 00 00 07    	test   DWORD PTR [rax],0x7000000
+4124785:     39f:	f6 00 00             	test   BYTE PTR [rax],0x0
+4127112:    1a22:	f6 00 00             	test   BYTE PTR [rax],0x0
+4128767:    2b09:	f6 00 00             	test   BYTE PTR [rax],0x0
+4129795:    34ed:	f6 00 00             	test   BYTE PTR [rax],0x0
+4131078:    4131:	f6 00 00             	test   BYTE PTR [rax],0x0
+4175555: 42f:	f6 08 00             	test   BYTE PTR [rax],0x0
+4175818: 6d4:	f6 08 00             	test   BYTE PTR [rax],0x0
+4176021: 8d9:	f6 08 00             	test   BYTE PTR [rax],0x0
+4206355: 3b7:	f6 00 02             	test   BYTE PTR [rax],0x2
+4244527:    3d63:	f6 00 00             	test   BYTE PTR [rax],0x0
+4283787: 1f0:	f6 08 4d             	test   BYTE PTR [rax],0x4d
+4334414:      f1:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+4409317:    1312:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+4409321:    131d:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+4423367:    1edb:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+4423390:    1f1c:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+4423395:    1f2a:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+4456760:    14bd:	f7 08 00 00 00 00    	test   DWORD PTR [rax],0x0
+4484632:    1411:	f7 08 00 00 00 00    	test   DWORD PTR [rax],0x0
+4484699:    14b1:	f7 08 00 00 00 00    	test   DWORD PTR [rax],0x0
+4549545:    35b1:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+4549549:    35bc:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+4567867:     406:	f7 08 6d 03 e0 00    	test   DWORD PTR [rax],0xe0036d
+4568703:     ce2:	f6 00 02             	test   BYTE PTR [rax],0x2
+4580350:    1322:	f7 00 31 00 00 00    	test   DWORD PTR [rax],0x31
+4582274:    285f:	f7 00 31 00 00 00    	test   DWORD PTR [rax],0x31
+4737983:   8:	f6 00 08             	test   BYTE PTR [rax],0x8
+4738370: 5bd:	f6 00 01             	test   BYTE PTR [rax],0x1
+4799123:    1c65:	f6 00 00             	test   BYTE PTR [rax],0x0
+4801650:     3aa:	f6 08 00             	test   BYTE PTR [rax],0x0
+4856108: 529:	f6 00 3c             	test   BYTE PTR [rax],0x3c
+4878230:    2b36:	f6 00 2b             	test   BYTE PTR [rax],0x2b
+4915819:    479e:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+4927311:  3c:	f7 00 00 00 00 42    	test   DWORD PTR [rax],0x42000000
+4928835:     8e2:	f7 08 00 00 13 8b    	test   DWORD PTR [rax],0x8b130000
+4928964:     a26:	f7 08 00 00 13 e0    	test   DWORD PTR [rax],0xe0130000
+4928981:     a50:	f7 08 00 00 13 8b    	test   DWORD PTR [rax],0x8b130000
+4987450:    381c:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+4987454:    3827:	f7 00 00 00 00 00    	test   DWORD PTR [rax],0x0
+5021162:  50:	f6 00 00             	test   BYTE PTR [rax],0x0
+5036013:     cfb:	f7 08 00 00 00 0a    	test   DWORD PTR [rax],0xa000000
+5036507:    11c9:	f7 08 00 00 00 0b    	test   DWORD PTR [rax],0xb000000
+5104640: 535:	f7 08 3d 08 3d 08    	test   DWORD PTR [rax],0x83d083d
+
+
+6426: 395:	f6 03 00             	test   BYTE PTR [rbx],0x0
+11212:     d61:	f6 0b 00             	test   BYTE PTR [rbx],0x0
+158722:    3a53:	f7 0b 00 00 00 00    	test   DWORD PTR [rbx],0x0
+212104: 24e:	f7 03 63 08 20 03    	test   DWORD PTR [rbx],0x3200863
+247915:     409:	f7 03 00 00 11 00    	test   DWORD PTR [rbx],0x110000
+369650: 2ef:	f6 03 5d             	test   BYTE PTR [rbx],0x5d
+460319:    165a:	f6 03 02             	test   BYTE PTR [rbx],0x2
+460412:    17d7:	f6 03 08             	test   BYTE PTR [rbx],0x8
+460540:    19d4:	f6 03 10             	test   BYTE PTR [rbx],0x10
+460556:    1a20:	f6 03 02             	test   BYTE PTR [rbx],0x2
+460569:    1a54:	f6 03 08             	test   BYTE PTR [rbx],0x8
+550606: 41e:	f7 03 fd 00 08 3c    	test   DWORD PTR [rbx],0x3c0800fd
+562318:     65c:	f6 0b 00             	test   BYTE PTR [rbx],0x0
+614530: 263:	f7 03 1f 01 03 88    	test   DWORD PTR [rbx],0x8803011f
+671053:    57e2:	f6 03 00             	test   BYTE PTR [rbx],0x0
+671312:    5a97:	f6 03 00             	test   BYTE PTR [rbx],0x0
+816790: 732:	f6 03 00             	test   BYTE PTR [rbx],0x0
+816803: 756:	f6 03 00             	test   BYTE PTR [rbx],0x0
+816886: 827:	f6 03 00             	test   BYTE PTR [rbx],0x0
+831774: 208:	f7 03 00 00 00 00    	test   DWORD PTR [rbx],0x0
+831783: 22c:	f7 03 00 00 00 00    	test   DWORD PTR [rbx],0x0
+831787: 237:	f7 03 00 00 00 00    	test   DWORD PTR [rbx],0x0
+844014: 334:	f6 03 72             	test   BYTE PTR [rbx],0x72
+921814: 3b8:	f6 03 a1             	test   BYTE PTR [rbx],0xa1
+986399:     a52:	f6 0b 00             	test   BYTE PTR [rbx],0x0
+986492:     b3f:	f6 0b 00             	test   BYTE PTR [rbx],0x0
+987579:    1556:	f6 0b 00             	test   BYTE PTR [rbx],0x0
+1065448: 518:	f7 03 00 00 00 00    	test   DWORD PTR [rbx],0x0
+1237606: 26a:	f7 03 cb 01 82 13    	test   DWORD PTR [rbx],0x138201cb
+1237673: 320:	f7 03 c3 7c 08 58    	test   DWORD PTR [rbx],0x58087cc3
+1299832: 613:	f6 03 b3             	test   BYTE PTR [rbx],0xb3
+1310586: 2b9:	f7 03 76 e4 03 ee    	test   DWORD PTR [rbx],0xee03e476
+1337574: 270:	4a f6 03 b3          	rex.WX test BYTE PTR [rbx],0xb3
+1349389:    169b:	f7 0b 00 00 00 00    	test   DWORD PTR [rbx],0x0
+1349396:    16ad:	f7 0b 00 00 00 00    	test   DWORD PTR [rbx],0x0
+1417842: 1d7:	f6 03 69             	test   BYTE PTR [rbx],0x69
+1477913: 519:	f6 03 00             	test   BYTE PTR [rbx],0x0
+1501008:    5872:	f6 03 57             	test   BYTE PTR [rbx],0x57
+1577609:    387f:	f6 03 4e             	test   BYTE PTR [rbx],0x4e
+1597951:     8dd:	f7 0b 00 00 00 00    	test   DWORD PTR [rbx],0x0
+1613065:     3f3:	f7 03 00 00 0e 00    	test   DWORD PTR [rbx],0xe0000
+1631442: 302:	f6 03 e5             	test   BYTE PTR [rbx],0xe5
+1639298: 311:	f6 03 e4             	test   BYTE PTR [rbx],0xe4
+1660404:     7f0:	f7 0b 00 00 1f 01    	test   DWORD PTR [rbx],0x11f0000
+1660710:     b08:	f7 0b 00 00 2f 64    	test   DWORD PTR [rbx],0x642f0000
+1824486:    28ee:	f7 03 a1 e0 c8 00    	test   DWORD PTR [rbx],0xc8e0a1
+1827010:    4336:	f6 03 2c             	test   BYTE PTR [rbx],0x2c
+1828305:    50a9:	26 f6 03 a4          	test   BYTE PTR es:[rbx],0xa4
+1840653:     ae5:	f7 0b 00 00 02 0b    	test   DWORD PTR [rbx],0xb020000
+1840686:     b41:	f7 0b 00 00 22 64    	test   DWORD PTR [rbx],0x64220000
+1903491: 22f:	f6 03 09             	test   BYTE PTR [rbx],0x9
+2005948: 4bb:	f6 03 77             	test   BYTE PTR [rbx],0x77
+2006074: 622:	f6 03 78             	test   BYTE PTR [rbx],0x78
+2119925:    6a32:	f6 03 3c             	test   BYTE PTR [rbx],0x3c
+2131445:    dd47:	f7 03 86 a5 5f 1b    	test   DWORD PTR [rbx],0x1b5fa586
+2137969:   11e6f:	f7 0b 36 ab a6 49    	test   DWORD PTR [rbx],0x49a6ab36
+2160190:   1fe3d:	f6 03 ae             	test   BYTE PTR [rbx],0xae
+2166390:   23c89:	f6 03 37             	test   BYTE PTR [rbx],0x37
+2204158: 2fc:	f7 03 4d 4a 03 33    	test   DWORD PTR [rbx],0x33034a4d
+2215792:    38b4:	f7 03 0c 00 00 00    	test   DWORD PTR [rbx],0xc
+2231228: 570:	f7 03 77 3c 03 09    	test   DWORD PTR [rbx],0x9033c77
+2264331:     3f2:	f6 03 00             	test   BYTE PTR [rbx],0x0
+2302207:     d1c:	f7 03 00 00 1c 07    	test   DWORD PTR [rbx],0x71c0000
+2507142:     9bd:	f6 03 00             	test   BYTE PTR [rbx],0x0
+2530663:     9bd:	f6 03 00             	test   BYTE PTR [rbx],0x0
+2567895: 5c0:	f7 03 08 3c af 91    	test   DWORD PTR [rbx],0x91af3c08
+2572966:     653:	f7 0b 00 00 18 09    	test   DWORD PTR [rbx],0x9180000
+2573594:     bed:	f7 0b 00 00 1a a7    	test   DWORD PTR [rbx],0xa71a0000
+2587925:     653:	f7 0b 00 00 18 09    	test   DWORD PTR [rbx],0x9180000
+2588553:     bed:	f7 0b 00 00 1a a7    	test   DWORD PTR [rbx],0xa71a0000
+2625908:     653:	f7 0b 00 00 18 09    	test   DWORD PTR [rbx],0x9180000
+2626536:     bed:	f7 0b 00 00 1a a7    	test   DWORD PTR [rbx],0xa71a0000
+2631641:     658:	f7 0b 00 00 10 0a    	test   DWORD PTR [rbx],0xa100000
+2638172:     647:	f6 0b 00             	test   BYTE PTR [rbx],0x0
+2638804:     be7:	f6 0b 00             	test   BYTE PTR [rbx],0x0
+2642640: 26b:	f6 03 46             	test   BYTE PTR [rbx],0x46
+2670780:     658:	f7 0b 00 00 10 0a    	test   DWORD PTR [rbx],0xa100000
+2885491: 46a:	f6 03 50             	test   BYTE PTR [rbx],0x50
+2901679:     59d:	f6 0b 00             	test   BYTE PTR [rbx],0x0
+2972121: 44f:	f6 03 00             	test   BYTE PTR [rbx],0x0
+3002013: 3f1:	f7 03 00 00 13 00    	test   DWORD PTR [rbx],0x130000
+3195282: 2a5:	f7 03 77 74 08 f3    	test   DWORD PTR [rbx],0xf3087477
+3202670:     c28:	f6 0b 00             	test   BYTE PTR [rbx],0x0
+3220930: 2ac:	f6 03 a4             	test   BYTE PTR [rbx],0xa4
+3236178:     86f:	f6 03 00             	test   BYTE PTR [rbx],0x0
+3287228:    2b54:	f6 03 00             	test   BYTE PTR [rbx],0x0
+3322695:    5670:	f6 03 00             	test   BYTE PTR [rbx],0x0
+3325271: 8dc:	f7 03 65 08 12 ad    	test   DWORD PTR [rbx],0xad120865
+3398039: 1e1:	f7 03 00 00 00 00    	test   DWORD PTR [rbx],0x0
+3398133: 2d0:	f6 03 00             	test   BYTE PTR [rbx],0x0
+3398147: 2f1:	f7 03 00 00 00 00    	test   DWORD PTR [rbx],0x0
+3414874: 187:	f7 03 0e 4a 03 72    	test   DWORD PTR [rbx],0x72034a0e
+3560115:     bc3:	f7 0b 00 00 09 00    	test   DWORD PTR [rbx],0x90000
+3585325:     59d:	f6 0b 00             	test   BYTE PTR [rbx],0x0
+3624923:    107f:	f6 03 3b             	test   BYTE PTR [rbx],0x3b
+3624928:    108b:	f7 03 3b 00 00 00    	test   DWORD PTR [rbx],0x3b
+3654493:     bca:	f6 0b 00             	test   BYTE PTR [rbx],0x0
+3737645:     3f3:	f7 03 00 00 0e 00    	test   DWORD PTR [rbx],0xe0000
+3823558:     65c:	f7 03 00 00 00 00    	test   DWORD PTR [rbx],0x0
+3823562:     667:	f7 03 00 00 00 00    	test   DWORD PTR [rbx],0x0
+3836177:     3f3:	f7 03 00 00 0e 00    	test   DWORD PTR [rbx],0xe0000
+3863936:     3f3:	f7 03 00 00 0e 00    	test   DWORD PTR [rbx],0xe0000
+3902518:   0:	f6 03 00             	test   BYTE PTR [rbx],0x0
+3976662:     59d:	f6 0b 00             	test   BYTE PTR [rbx],0x0
+4084130:    24a6:	f7 03 00 00 00 00    	test   DWORD PTR [rbx],0x0
+4085943:     430:	f7 03 00 00 00 00    	test   DWORD PTR [rbx],0x0
+4334940:     5e8:	f7 03 00 00 13 00    	test   DWORD PTR [rbx],0x130000
+4334950:     600:	f7 03 00 00 13 00    	test   DWORD PTR [rbx],0x130000
+4334960:     618:	f7 03 00 00 13 00    	test   DWORD PTR [rbx],0x130000
+4334970:     630:	f7 03 00 00 13 00    	test   DWORD PTR [rbx],0x130000
+4334979:     648:	f7 03 00 00 13 00    	test   DWORD PTR [rbx],0x130000
+4334988:     660:	f7 03 00 00 13 00    	test   DWORD PTR [rbx],0x130000
+4334996:     678:	f7 03 00 00 13 00    	test   DWORD PTR [rbx],0x130000
+4335010:     69c:	f7 03 00 00 13 00    	test   DWORD PTR [rbx],0x130000
+4335020:     6b4:	f7 03 00 00 02 10    	test   DWORD PTR [rbx],0x10020000
+4335068:     719:	f7 03 00 00 0e 00    	test   DWORD PTR [rbx],0xe0000
+4335162:     7ce:	f7 03 00 00 13 00    	test   DWORD PTR [rbx],0x130000
+4335180:     7f2:	f7 03 00 00 13 00    	test   DWORD PTR [rbx],0x130000
+4335184:     7fe:	f7 03 00 00 13 00    	test   DWORD PTR [rbx],0x130000
+4335200:     822:	f7 03 00 00 13 00    	test   DWORD PTR [rbx],0x130000
+4335216:     846:	f7 03 00 00 13 00    	test   DWORD PTR [rbx],0x130000
+4335261:     89a:	f7 03 00 00 13 00    	test   DWORD PTR [rbx],0x130000
+4337978: 1e9:	f6 03 00             	test   BYTE PTR [rbx],0x0
+4338082: 2e2:	f6 03 00             	test   BYTE PTR [rbx],0x0
+4345729: 1d5:	4c f7 03 7a 08 66 83 	rex.WR test QWORD PTR [rbx],0xffffffff8366087a
+4407666:     33f:	f7 03 00 00 00 00    	test   DWORD PTR [rbx],0x0
+4474571: 1ea:	f7 03 00 00 00 00    	test   DWORD PTR [rbx],0x0
+4598614:     3ee:	f7 03 00 00 04 e7    	test   DWORD PTR [rbx],0xe7040000
+4600588:    16ef:	f7 0b 00 00 00 00    	test   DWORD PTR [rbx],0x0
+4717489:  12:	f6 03 04             	test   BYTE PTR [rbx],0x4
+4756998:     47a:	2e f6 03 00          	test   BYTE PTR cs:[rbx],0x0
+4757004:     486:	f6 03 00             	test   BYTE PTR [rbx],0x0
+4757043:     4d2:	36 f6 03 00          	test   BYTE PTR ss:[rbx],0x0
+4757049:     4de:	f6 03 00             	test   BYTE PTR [rbx],0x0
+4775231:    334d:	f7 03 00 00 00 00    	test   DWORD PTR [rbx],0x0
+4775314:    341c:	f7 03 00 00 00 00    	test   DWORD PTR [rbx],0x0
+4775898:    39c7:	f7 03 00 00 00 00    	test   DWORD PTR [rbx],0x0
+4775914:    39ff:	f7 03 00 00 00 00    	test   DWORD PTR [rbx],0x0
+4775983:    3ade:	f7 03 00 00 00 00    	test   DWORD PTR [rbx],0x0
+4775995:    3b09:	f7 03 00 00 00 00    	test   DWORD PTR [rbx],0x0
+4776003:    3b2d:	f7 03 00 00 00 00    	test   DWORD PTR [rbx],0x0
+4776230:    3dba:	f7 03 00 00 00 00    	test   DWORD PTR [rbx],0x0
+4788913:     a1c:	f7 03 54 4a 03 2c    	test   DWORD PTR [rbx],0x2c034a54
+4984825:    1cfa:	f7 0b 00 00 00 00    	test   DWORD PTR [rbx],0x0
+4984829:    1d05:	f7 0b 00 00 00 00    	test   DWORD PTR [rbx],0x0
+5116177:     3ed:	f6 03 00             	test   BYTE PTR [rbx],0x0
+5117155:     bfe:	f7 0b 00 00 08 08    	test   DWORD PTR [rbx],0x8080000
+
+
+2309:    1bf2:	f6 01 f7             	test   BYTE PTR [rcx],0xf7
+3268:    25a4:	f7 01 26 9f 5c 72    	test   DWORD PTR [rcx],0x725c9f26
+79670: 199:	f6 01 3d             	test   BYTE PTR [rcx],0x3d
+115826: 176:	f7 01 01 15 3e 03    	test   DWORD PTR [rcx],0x33e1501
+129409:  d5:	f7 01 00 00 00 00    	test   DWORD PTR [rcx],0x0
+202460: 199:	f6 01 3d             	test   BYTE PTR [rcx],0x3d
+216875:    1117:	f6 01 fb             	test   BYTE PTR [rcx],0xfb
+216881:    1123:	f7 01 fb 04 00 00    	test   DWORD PTR [rcx],0x4fb
+232038:    1221:	f6 01 3f             	test   BYTE PTR [rcx],0x3f
+232046:    1232:	f6 01 be             	test   BYTE PTR [rcx],0xbe
+232052:    123e:	f6 01 3f             	test   BYTE PTR [rcx],0x3f
+265714:     e37:	f7 01 c4 04 00 00    	test   DWORD PTR [rcx],0x4c4
+276034:    1c06:	f6 01 00             	test   BYTE PTR [rcx],0x0
+287887:     df5:	f6 01 e0             	test   BYTE PTR [rcx],0xe0
+287893:     e01:	f7 01 e0 04 00 00    	test   DWORD PTR [rcx],0x4e0
+311113:     dd4:	2e f7 09 00 00 00 00 	test   DWORD PTR cs:[rcx],0x0
+331165: 2ed:	f7 01 00 00 00 00    	test   DWORD PTR [rcx],0x0
+331169: 2f8:	f7 01 00 00 00 00    	test   DWORD PTR [rcx],0x0
+334268: 77c:	f7 09 00 00 9f 07    	test   DWORD PTR [rcx],0x79f0000
+349540: 84b:	f6 01 8d             	test   BYTE PTR [rcx],0x8d
+349546: 857:	f7 01 8d 03 00 00    	test   DWORD PTR [rcx],0x38d
+353990:     fc3:	f6 09 00             	test   BYTE PTR [rcx],0x0
+386098:   0:	f6 01 00             	test   BYTE PTR [rcx],0x0
+432670:     5c8:	f7 01 00 00 00 00    	test   DWORD PTR [rcx],0x0
+432712:     62e:	f7 01 00 00 00 00    	test   DWORD PTR [rcx],0x0
+432873:     7a9:	f7 01 00 00 00 00    	test   DWORD PTR [rcx],0x0
+454154:    14b3:	f6 01 00             	test   BYTE PTR [rcx],0x0
+482482: 804:	f6 01 78             	test   BYTE PTR [rcx],0x78
+645163: 99f:	f6 09 00             	test   BYTE PTR [rcx],0x0
+645365: b87:	f6 09 00             	test   BYTE PTR [rcx],0x0
+755028:   0:	f7 01 00 00 02 00    	test   DWORD PTR [rcx],0x20000
+789722:     b41:	f7 01 00 00 00 00    	test   DWORD PTR [rcx],0x0
+792842:    2e90:	f6 09 00             	test   BYTE PTR [rcx],0x0
+842098:     100:	f7 01 00 00 00 00    	test   DWORD PTR [rcx],0x0
+842102:     10b:	f7 01 00 00 00 00    	test   DWORD PTR [rcx],0x0
+852720:    1d03:	f6 01 49             	test   BYTE PTR [rcx],0x49
+852724:    1d0d:	f6 01 49             	test   BYTE PTR [rcx],0x49
+904279: c96:	f6 01 00             	test   BYTE PTR [rcx],0x0
+937302:    1990:	f6 09 00             	test   BYTE PTR [rcx],0x0
+964252: 265:	f6 01 02             	test   BYTE PTR [rcx],0x2
+972731:     e19:	f6 09 00             	test   BYTE PTR [rcx],0x0
+981864:    150b:	f6 01 00             	test   BYTE PTR [rcx],0x0
+998047: 57e:	f6 01 00             	test   BYTE PTR [rcx],0x0
+1000994: 601:	f6 09 00             	test   BYTE PTR [rcx],0x0
+1001313: 8fd:	f6 09 00             	test   BYTE PTR [rcx],0x0
+1103105:    1f29:	f6 09 03             	test   BYTE PTR [rcx],0x3
+1105406: b38:	f6 01 00             	test   BYTE PTR [rcx],0x0
+1105470: bde:	f6 01 00             	test   BYTE PTR [rcx],0x0
+1105566: cd9:	f6 01 00             	test   BYTE PTR [rcx],0x0
+1105658: dc6:	f6 01 00             	test   BYTE PTR [rcx],0x0
+1105723: e6c:	f6 01 00             	test   BYTE PTR [rcx],0x0
+1105792: f15:	f6 01 00             	test   BYTE PTR [rcx],0x0
+1118333: 744:	f7 01 61 03 00 00    	test   DWORD PTR [rcx],0x361
+1160449:     b56:	f7 01 b5 04 00 00    	test   DWORD PTR [rcx],0x4b5
+1178510:     e14:	f7 01 ec 04 00 00    	test   DWORD PTR [rcx],0x4ec
+1208279:     e38:	f6 01 0c             	test   BYTE PTR [rcx],0xc
+1208283:     e44:	f7 01 0c 05 00 00    	test   DWORD PTR [rcx],0x50c
+1211607:    2ded:	f6 01 4a             	test   BYTE PTR [rcx],0x4a
+1222064:     9ed:	f6 09 00             	test   BYTE PTR [rcx],0x0
+1222920:    12e3:	f6 01 18             	test   BYTE PTR [rcx],0x18
+1222924:    12ef:	f7 01 18 05 00 00    	test   DWORD PTR [rcx],0x518
+1230090:    5d2b:	f6 01 61             	test   BYTE PTR [rcx],0x61
+1230111:    5d66:	f7 01 61 00 00 00    	test   DWORD PTR [rcx],0x61
+1247143:     eef:	f6 01 23             	test   BYTE PTR [rcx],0x23
+1247147:     efb:	f7 01 23 05 00 00    	test   DWORD PTR [rcx],0x523
+1301557: 1dc:	f6 01 0a             	test   BYTE PTR [rcx],0xa
+1316383:     94d:	f6 01 7a             	test   BYTE PTR [rcx],0x7a
+1339465:     780:	f6 01 cb             	test   BYTE PTR [rcx],0xcb
+1339470:     78c:	f7 01 cb 00 00 00    	test   DWORD PTR [rcx],0xcb
+1355069:     7ce:	f6 01 ff             	test   BYTE PTR [rcx],0xff
+1355320:     9f2:	f6 09 00             	test   BYTE PTR [rcx],0x0
+1356254:    131d:	f6 01 00             	test   BYTE PTR [rcx],0x0
+1360599: 32a:	f7 01 ac 03 6e 82    	test   DWORD PTR [rcx],0x826e03ac
+1363168: 120:	f6 01 00             	test   BYTE PTR [rcx],0x0
+1364117:     70b:	f6 01 c0             	test   BYTE PTR [rcx],0xc0
+1364122:     717:	f7 01 c0 00 00 00    	test   DWORD PTR [rcx],0xc0
+1375986:     8a8:	f6 01 b5             	test   BYTE PTR [rcx],0xb5
+1375991:     8b4:	f7 01 b5 00 00 00    	test   DWORD PTR [rcx],0xb5
+1392864:     81a:	f6 01 cb             	test   BYTE PTR [rcx],0xcb
+1392869:     826:	f7 01 cb 00 00 00    	test   DWORD PTR [rcx],0xcb
+1398456:     775:	f6 01 ce             	test   BYTE PTR [rcx],0xce
+1398461:     781:	f7 01 ce 00 00 00    	test   DWORD PTR [rcx],0xce
+1398738:     9de:	f6 09 00             	test   BYTE PTR [rcx],0x0
+1398748:     9f1:	f6 09 00             	test   BYTE PTR [rcx],0x0
+1398848:     ae0:	f6 09 00             	test   BYTE PTR [rcx],0x0
+1398973:     bd7:	f6 09 00             	test   BYTE PTR [rcx],0x0
+1399002:     c11:	f6 09 00             	test   BYTE PTR [rcx],0x0
+1494623:    1270:	f6 01 e1             	test   BYTE PTR [rcx],0xe1
+1494629:    127c:	f7 01 e1 04 00 00    	test   DWORD PTR [rcx],0x4e1
+1501100:    5971:	f6 01 57             	test   BYTE PTR [rcx],0x57
+1501136:    59d1:	f6 01 57             	test   BYTE PTR [rcx],0x57
+1501169:    5a25:	f6 01 57             	test   BYTE PTR [rcx],0x57
+1501180:    5a48:	f6 01 56             	test   BYTE PTR [rcx],0x56
+1531907:     928:	f7 01 7d 04 00 00    	test   DWORD PTR [rcx],0x47d
+1554204:     da3:	f6 01 ac             	test   BYTE PTR [rcx],0xac
+1554210:     daf:	f7 01 ac 03 00 00    	test   DWORD PTR [rcx],0x3ac
+1573659:    10ef:	f6 01 dc             	test   BYTE PTR [rcx],0xdc
+1573665:    10fb:	f7 01 dc 04 00 00    	test   DWORD PTR [rcx],0x4dc
+1607071:  10:	f7 01 00 00 00 00    	test   DWORD PTR [rcx],0x0
+1634879:     d94:	f6 01 9c             	test   BYTE PTR [rcx],0x9c
+1634885:     da0:	f7 01 9c 03 00 00    	test   DWORD PTR [rcx],0x39c
+1683612:    2a4a:	f6 01 45             	test   BYTE PTR [rcx],0x45
+1685358:    3c82:	f6 01 fb             	test   BYTE PTR [rcx],0xfb
+1686777:    4aca:	f7 01 ac 76 6d ff    	test   DWORD PTR [rcx],0xff6d76ac
+1692809:     9e4:	f6 09 00             	test   BYTE PTR [rcx],0x0
+1820604:      96:	f6 01 3e             	test   BYTE PTR [rcx],0x3e
+1827956:    4d1c:	65 48 f6 09 f7       	rex.W test BYTE PTR gs:[rcx],0xf7
+1834102:      54:	f7 09 00 00 00 00    	test   DWORD PTR [rcx],0x0
+1836557:  18:	f7 09 00 00 00 00    	test   DWORD PTR [rcx],0x0
+1854197: 194:	f6 01 00             	test   BYTE PTR [rcx],0x0
+1868111:    1a55:	f6 01 9a             	test   BYTE PTR [rcx],0x9a
+1887382:    17f4:	f7 01 e1 04 00 00    	test   DWORD PTR [rcx],0x4e1
+1895467:    6617:	f6 01 5a             	test   BYTE PTR [rcx],0x5a
+1895498:    666b:	f6 01 5a             	test   BYTE PTR [rcx],0x5a
+1895518:    66a5:	f6 01 5a             	test   BYTE PTR [rcx],0x5a
+1897035:     93a:	f7 01 00 00 00 00    	test   DWORD PTR [rcx],0x0
+1897039:     945:	f7 01 00 00 00 00    	test   DWORD PTR [rcx],0x0
+1940472:    21cf:	f6 01 cd             	test   BYTE PTR [rcx],0xcd
+1943342:    3e5b:	48 f7 09 a5 d0 3b b5 	test   QWORD PTR [rcx],0xffffffffb53bd0a5
+2000603:    49c5:	f7 01 00 00 00 00    	test   DWORD PTR [rcx],0x0
+2000607:    49d0:	f7 01 00 00 00 00    	test   DWORD PTR [rcx],0x0
+2038324:    1220:	f6 01 91             	test   BYTE PTR [rcx],0x91
+2038330:    122c:	f7 01 91 03 00 00    	test   DWORD PTR [rcx],0x391
+2110327:     a3f:	f7 01 ad 2b ed cf    	test   DWORD PTR [rcx],0xcfed2bad
+2114190:    30e7:	f7 09 d5 4e 14 f8    	test   DWORD PTR [rcx],0xf8144ed5
+2115960:    42bb:	f6 09 77             	test   BYTE PTR [rcx],0x77
+2120724:    7223:	f7 01 ae 83 0d 07    	test   DWORD PTR [rcx],0x70d83ae
+2137548:   11a23:	f7 09 a4 cf d3 f6    	test   DWORD PTR [rcx],0xf6d3cfa4
+2153883:   1be72:	f6 01 54             	test   BYTE PTR [rcx],0x54
+2154635:   1c5e8:	f6 01 9c             	test   BYTE PTR [rcx],0x9c
+2183282:    3f36:	f6 01 1c             	test   BYTE PTR [rcx],0x1c
+2183287:    3f42:	f7 01 1c 14 00 00    	test   DWORD PTR [rcx],0x141c
+2186579:     c77:	f7 09 00 00 00 00    	test   DWORD PTR [rcx],0x0
+2186634:     cfe:	f7 09 00 00 00 00    	test   DWORD PTR [rcx],0x0
+2186707:     dc2:	f7 09 00 00 00 00    	test   DWORD PTR [rcx],0x0
+2186780:     e86:	f7 09 00 00 00 00    	test   DWORD PTR [rcx],0x0
+2186869:     f5f:	f7 09 00 00 00 00    	test   DWORD PTR [rcx],0x0
+2187047:    1104:	f7 09 00 00 00 00    	test   DWORD PTR [rcx],0x0
+2187163:    1218:	f7 09 00 00 00 00    	test   DWORD PTR [rcx],0x0
+2187289:    1340:	f7 09 00 00 00 00    	test   DWORD PTR [rcx],0x0
+2214843:    2f82:	f6 01 38             	test   BYTE PTR [rcx],0x38
+2214878:    2fc1:	f7 01 03 0c 00 00    	test   DWORD PTR [rcx],0xc03
+2239003:    1649:	f7 01 eb 04 00 00    	test   DWORD PTR [rcx],0x4eb
+2255758: 665:	f7 01 58 03 d3 7d    	test   DWORD PTR [rcx],0x7dd30358
+2255848: 77e:	f7 01 08 ba 03 db    	test   DWORD PTR [rcx],0xdb03ba08
+2261756: 5c4:	f6 01 75             	test   BYTE PTR [rcx],0x75
+2280679:     976:	f6 01 d9             	test   BYTE PTR [rcx],0xd9
+2280685:     982:	f7 01 d9 03 00 00    	test   DWORD PTR [rcx],0x3d9
+2297045:     98c:	f6 01 87             	test   BYTE PTR [rcx],0x87
+2297051:     998:	f7 01 87 03 00 00    	test   DWORD PTR [rcx],0x387
+2310620:    1108:	f7 01 25 11 00 00    	test   DWORD PTR [rcx],0x1125
+2327596: 578:	f7 01 00 00 00 00    	test   DWORD PTR [rcx],0x0
+2327600: 583:	f7 01 00 00 00 00    	test   DWORD PTR [rcx],0x0
+2331035: 66d:	f7 01 0a 03 00 00    	test   DWORD PTR [rcx],0x30a
+2343698:     f8c:	f7 01 ec 04 00 00    	test   DWORD PTR [rcx],0x4ec
+2352521:   0:	f6 01 00             	test   BYTE PTR [rcx],0x0
+2361291:   0:	f6 01 00             	test   BYTE PTR [rcx],0x0
+2444585:     5ad:	f7 09 00 00 d8 09    	test   DWORD PTR [rcx],0x9d80000
+2452461:     5ad:	f7 09 00 00 d8 09    	test   DWORD PTR [rcx],0x9d80000
+2524359: 72f:	f6 01 08             	test   BYTE PTR [rcx],0x8
+2601032:    19ea:	f6 01 00             	test   BYTE PTR [rcx],0x0
+2712225: 616:	f6 01 79             	test   BYTE PTR [rcx],0x79
+2776060:     ab6:	f6 09 00             	test   BYTE PTR [rcx],0x0
+2776079:     adf:	f6 09 00             	test   BYTE PTR [rcx],0x0
+2776171:     be3:	f6 09 00             	test   BYTE PTR [rcx],0x0
+2776181:     bf8:	f6 09 00             	test   BYTE PTR [rcx],0x0
+2776195:     c17:	f6 09 00             	test   BYTE PTR [rcx],0x0
+2776205:     c31:	f6 09 00             	test   BYTE PTR [rcx],0x0
+2776674:    10ad:	f6 09 00             	test   BYTE PTR [rcx],0x0
+2776852:    1272:	f6 09 00             	test   BYTE PTR [rcx],0x0
+2776955:    139b:	f6 09 00             	test   BYTE PTR [rcx],0x0
+2800875:     910:	f6 01 78             	test   BYTE PTR [rcx],0x78
+2836815: 610:	f7 01 6f 03 00 00    	test   DWORD PTR [rcx],0x36f
+2859811:     5ad:	f7 09 00 00 d8 09    	test   DWORD PTR [rcx],0x9d80000
+2877232:     ff9:	f6 01 2d             	test   BYTE PTR [rcx],0x2d
+2877236:    1005:	f7 01 2d 05 00 00    	test   DWORD PTR [rcx],0x52d
+2910271: 690:	f7 01 00 00 00 00    	test   DWORD PTR [rcx],0x0
+2910275: 69b:	f7 01 00 00 00 00    	test   DWORD PTR [rcx],0x0
+2910368: 776:	f7 01 00 00 00 00    	test   DWORD PTR [rcx],0x0
+2928980: 1f3:	f7 01 00 00 13 04    	test   DWORD PTR [rcx],0x4130000
+2929328: 1d8:	f7 01 00 00 00 00    	test   DWORD PTR [rcx],0x0
+2930271: ab0:	f7 01 00 00 00 00    	test   DWORD PTR [rcx],0x0
+3011650:    1aee:	f6 01 00             	test   BYTE PTR [rcx],0x0
+3011665:    1b14:	f7 01 00 2c 00 00    	test   DWORD PTR [rcx],0x2c00
+3011829:    1cd3:	f6 01 00             	test   BYTE PTR [rcx],0x0
+3011844:    1cf9:	f7 01 00 2c 00 00    	test   DWORD PTR [rcx],0x2c00
+3018595: 536:	f7 01 3c 03 89 7e    	test   DWORD PTR [rcx],0x7e89033c
+3018657: 5fc:	f7 01 08 2e 03 d2    	test   DWORD PTR [rcx],0xd2032e08
+3018667: 619:	f6 01 08             	test   BYTE PTR [rcx],0x8
+3096589: 17f:	f6 01 00             	test   BYTE PTR [rcx],0x0
+3096595: 18c:	f6 01 00             	test   BYTE PTR [rcx],0x0
+3101824:    15dc:	f7 01 00 00 00 00    	test   DWORD PTR [rcx],0x0
+3157201:    16ac:	f7 01 00 00 2b 00    	test   DWORD PTR [rcx],0x2b0000
+3178975:     aab:	f6 01 7e             	test   BYTE PTR [rcx],0x7e
+3216815:     6aa:	f7 01 6f 03 00 00    	test   DWORD PTR [rcx],0x36f
+3272240: 4b8:	f6 01 00             	test   BYTE PTR [rcx],0x0
+3297928:    163c:	f6 09 00             	test   BYTE PTR [rcx],0x0
+3297952:    166b:	f6 09 00             	test   BYTE PTR [rcx],0x0
+3306953:     d20:	f6 01 e5             	test   BYTE PTR [rcx],0xe5
+3306959:     d2c:	f7 01 e5 04 00 00    	test   DWORD PTR [rcx],0x4e5
+3328401: 47c:	f6 01 0a             	test   BYTE PTR [rcx],0xa
+3349404:    120b:	f7 01 00 00 00 00    	test   DWORD PTR [rcx],0x0
+3397602:    16fe:	f6 01 29             	test   BYTE PTR [rcx],0x29
+3408861: 8c7:	f7 01 6c 04 00 00    	test   DWORD PTR [rcx],0x46c
+3413579: 8fb:	f7 01 67 04 00 00    	test   DWORD PTR [rcx],0x467
+3421697:     8df:	f6 01 00             	test   BYTE PTR [rcx],0x0
+3453155:     c2d:	f7 01 8c 04 00 00    	test   DWORD PTR [rcx],0x48c
+3464392:     a69:	f7 09 00 00 30 00    	test   DWORD PTR [rcx],0x300000
+3475363: eed:	f6 01 2c             	test   BYTE PTR [rcx],0x2c
+3479393:     8fd:	f7 01 6c 04 00 00    	test   DWORD PTR [rcx],0x46c
+3522232:    5031:	f7 01 55 00 00 00    	test   DWORD PTR [rcx],0x55
+3564660:    3a41:	f6 01 48             	test   BYTE PTR [rcx],0x48
+3567100:    1271:	f6 09 00             	test   BYTE PTR [rcx],0x0
+3641942:     953:	f6 01 a8             	test   BYTE PTR [rcx],0xa8
+3641948:     95f:	f7 01 a8 03 00 00    	test   DWORD PTR [rcx],0x3a8
+3654283:     9c7:	f6 09 00             	test   BYTE PTR [rcx],0x0
+3702875:    14a3:	f6 01 07             	test   BYTE PTR [rcx],0x7
+3702879:    14af:	f7 01 07 05 00 00    	test   DWORD PTR [rcx],0x507
+3710019:    6585:	f6 01 5e             	test   BYTE PTR [rcx],0x5e
+3710027:    659d:	f6 01 5e             	test   BYTE PTR [rcx],0x5e
+3727653:    1af8:	f6 01 00             	test   BYTE PTR [rcx],0x0
+3739807: 322:	f7 01 00 00 00 00    	test   DWORD PTR [rcx],0x0
+3739863: 3b9:	f7 01 00 00 00 00    	test   DWORD PTR [rcx],0x0
+3759706:     f93:	f7 01 da 04 00 00    	test   DWORD PTR [rcx],0x4da
+3812000:    1451:	f7 01 00 00 00 00    	test   DWORD PTR [rcx],0x0
+3812004:    145c:	f7 01 00 00 00 00    	test   DWORD PTR [rcx],0x0
+3848286:     c2f:	f6 01 a9             	test   BYTE PTR [rcx],0xa9
+3848292:     c3b:	f7 01 a9 04 00 00    	test   DWORD PTR [rcx],0x4a9
+3872673: 4dc:	f7 01 9d 03 00 00    	test   DWORD PTR [rcx],0x39d
+3872679: 4eb:	f7 01 9d 03 00 00    	test   DWORD PTR [rcx],0x39d
+3872685: 4fa:	f7 01 9d 03 00 00    	test   DWORD PTR [rcx],0x39d
+3872691: 509:	f7 01 9d 03 00 00    	test   DWORD PTR [rcx],0x39d
+4020911: 3d2:	f6 01 3c             	test   BYTE PTR [rcx],0x3c
+4126081:     ff1:	f6 01 d4             	test   BYTE PTR [rcx],0xd4
+4126085:     ffd:	f7 01 d4 05 00 00    	test   DWORD PTR [rcx],0x5d4
+4172399: 578:	f6 01 9a             	test   BYTE PTR [rcx],0x9a
+4172405: 584:	f7 01 9a 00 00 00    	test   DWORD PTR [rcx],0x9a
+4181121:     ce3:	f6 01 9c             	test   BYTE PTR [rcx],0x9c
+4181127:     cef:	f7 01 9c 01 00 00    	test   DWORD PTR [rcx],0x19c
+4224430:    162c:	f6 01 2c             	test   BYTE PTR [rcx],0x2c
+4225222: 5cd:	f6 01 00             	test   BYTE PTR [rcx],0x0
+4274333:    2014:	f6 01 48             	test   BYTE PTR [rcx],0x48
+4277809:    4146:	f7 01 5d 00 00 00    	test   DWORD PTR [rcx],0x5d
+4331716: 6a1:	f6 01 6a             	test   BYTE PTR [rcx],0x6a
+4335137:     79c:	f6 01 f7             	test   BYTE PTR [rcx],0xf7
+4335143:     7a8:	f7 01 f7 03 00 00    	test   DWORD PTR [rcx],0x3f7
+4342478:     6cf:	f6 01 75             	test   BYTE PTR [rcx],0x75
+4366046: 238:	f6 01 00             	test   BYTE PTR [rcx],0x0
+4397694:     4d3:	f6 09 00             	test   BYTE PTR [rcx],0x0
+4474613: 25e:	f6 01 00             	test   BYTE PTR [rcx],0x0
+4474620: 26e:	f6 01 00             	test   BYTE PTR [rcx],0x0
+4484170:     fa0:	f6 01 a3             	test   BYTE PTR [rcx],0xa3
+4484176:     fac:	f7 01 a3 04 00 00    	test   DWORD PTR [rcx],0x4a3
+4493038:    10f0:	f7 01 fa 04 00 00    	test   DWORD PTR [rcx],0x4fa
+4579188:     81a:	f6 01 5f             	test   BYTE PTR [rcx],0x5f
+4579194:     826:	f7 01 5f 04 00 00    	test   DWORD PTR [rcx],0x45f
+4622782:    1533:	f7 01 b9 04 00 00    	test   DWORD PTR [rcx],0x4b9
+4657046: 736:	f6 01 1b             	test   BYTE PTR [rcx],0x1b
+4657052: 742:	f7 01 1b 01 00 00    	test   DWORD PTR [rcx],0x11b
+4662645:    112a:	f6 01 12             	test   BYTE PTR [rcx],0x12
+4662649:    1136:	f7 01 12 05 00 00    	test   DWORD PTR [rcx],0x512
+4703674:     ef7:	f7 01 ca 04 00 00    	test   DWORD PTR [rcx],0x4ca
+4710666:     dd3:	f6 01 f5             	test   BYTE PTR [rcx],0xf5
+4710671:     ddf:	f7 01 f5 04 00 00    	test   DWORD PTR [rcx],0x4f5
+4809760:     bbc:	f7 01 94 04 00 00    	test   DWORD PTR [rcx],0x494
+4823520:    14dc:	f6 01 07             	test   BYTE PTR [rcx],0x7
+4823528:    14ec:	f6 01 67             	test   BYTE PTR [rcx],0x67
+4828872:     de1:	f7 09 00 00 00 00    	test   DWORD PTR [rcx],0x0
+4831472:    289f:	f7 01 00 00 00 00    	test   DWORD PTR [rcx],0x0
+4831658:    2a64:	f7 01 00 00 00 00    	test   DWORD PTR [rcx],0x0
+4831837:    2c1c:	f7 01 00 00 00 00    	test   DWORD PTR [rcx],0x0
+4843516:    2af2:	f7 01 9b 00 00 00    	test   DWORD PTR [rcx],0x9b
+4869795: 134:	f7 01 00 00 00 00    	test   DWORD PTR [rcx],0x0
+4874713:     9e5:	f7 09 00 00 00 00    	test   DWORD PTR [rcx],0x0
+4922457: 2c1:	f6 01 58             	test   BYTE PTR [rcx],0x58
+4922521: 376:	f6 01 58             	test   BYTE PTR [rcx],0x58
+4922545: 3be:	f6 01 58             	test   BYTE PTR [rcx],0x58
+4977326:    18e8:	f6 01 18             	test   BYTE PTR [rcx],0x18
+4977330:    18f4:	f7 01 18 05 00 00    	test   DWORD PTR [rcx],0x518
+4978790:    2771:	f7 01 e3 28 00 00    	test   DWORD PTR [rcx],0x28e3
+4979313:    2d58:	f7 01 ca 2e 00 00    	test   DWORD PTR [rcx],0x2eca
+4995065:     7ac:	f6 01 0f             	test   BYTE PTR [rcx],0xf
+5003077: 7c8:	f7 01 d9 03 00 00    	test   DWORD PTR [rcx],0x3d9
+5036137:     e27:	f7 01 00 05 00 00    	test   DWORD PTR [rcx],0x500
+5070225:     989:	f6 01 ea             	test   BYTE PTR [rcx],0xea
+5070231:     995:	f7 01 ea 03 00 00    	test   DWORD PTR [rcx],0x3ea
+5130128: 57f:	f6 01 0a             	test   BYTE PTR [rcx],0xa
+5130134: 58b:	f7 01 0a 03 00 00    	test   DWORD PTR [rcx],0x30a
+5136029:     6c2:	f6 01 8b             	test   BYTE PTR [rcx],0x8b
+
+
+394578:    1c64:	f6 07 00             	test   BYTE PTR [rdi],0x0
+394618:    1cc2:	f6 07 00             	test   BYTE PTR [rdi],0x0
+554788: 7eb:	f6 07 00             	test   BYTE PTR [rdi],0x0
+611826:     feb:	f6 0f 00             	test   BYTE PTR [rdi],0x0
+699807:     e32:	f7 07 00 00 00 00    	test   DWORD PTR [rdi],0x0
+699811:     e3d:	48 f7 07 00 00 00 00 	test   QWORD PTR [rdi],0x0
+701195:    1c1e:	f7 07 00 00 00 00    	test   DWORD PTR [rdi],0x0
+701217:    1c56:	f7 07 00 00 00 00    	test   DWORD PTR [rdi],0x0
+701256:    1cc4:	f7 07 00 00 00 00    	test   DWORD PTR [rdi],0x0
+701297:    1d25:	f7 07 00 00 00 00    	test   DWORD PTR [rdi],0x0
+749060:     3c5:	f7 07 00 00 00 00    	test   DWORD PTR [rdi],0x0
+751861: 2f0:	f7 07 00 00 00 00    	test   DWORD PTR [rdi],0x0
+911248:     f8b:	f6 0f 00             	test   BYTE PTR [rdi],0x0
+937102:    1791:	f6 07 00             	test   BYTE PTR [rdi],0x0
+966703:     268:	f7 07 05 08 0f 08    	test   DWORD PTR [rdi],0x80f0805
+989919:     f21:	f6 07 00             	test   BYTE PTR [rdi],0x0
+990117:    10bf:	f6 07 00             	test   BYTE PTR [rdi],0x0
+990213:    1196:	f6 07 00             	test   BYTE PTR [rdi],0x0
+990319:    128f:	f6 07 00             	test   BYTE PTR [rdi],0x0
+990412:    1350:	f6 07 00             	test   BYTE PTR [rdi],0x0
+990600:    14d8:	f6 07 00             	test   BYTE PTR [rdi],0x0
+994007: 1d8:	f7 07 00 00 00 00    	test   DWORD PTR [rdi],0x0
+1010529:     77a:	f7 0f 00 00 a7 07    	test   DWORD PTR [rdi],0x7a70000
+1010820:     a0f:	f7 0f 00 00 36 0a    	test   DWORD PTR [rdi],0xa360000
+1021198:     549:	f6 0f 00             	test   BYTE PTR [rdi],0x0
+1021264:     5fb:	f6 0f 00             	test   BYTE PTR [rdi],0x0
+1021346:     6db:	f6 0f 00             	test   BYTE PTR [rdi],0x0
+1022018:     db3:	f6 0f 00             	test   BYTE PTR [rdi],0x0
+1022025:     dcb:	f6 0f 00             	test   BYTE PTR [rdi],0x0
+1022032:     de3:	f6 0f 00             	test   BYTE PTR [rdi],0x0
+1022048:     e13:	f6 0f 00             	test   BYTE PTR [rdi],0x0
+1022057:     e2b:	f6 0f 00             	test   BYTE PTR [rdi],0x0
+1033754:  ec:	f6 07 00             	test   BYTE PTR [rdi],0x0
+1033789: 14b:	f6 07 00             	test   BYTE PTR [rdi],0x0
+1033826: 1aa:	f6 07 00             	test   BYTE PTR [rdi],0x0
+1084409:     64e:	f7 0f 00 00 10 09    	test   DWORD PTR [rdi],0x9100000
+1146236:    1035:	f6 07 00             	test   BYTE PTR [rdi],0x0
+1212277:     1ac:	f7 07 00 00 00 00    	test   DWORD PTR [rdi],0x0
+1212281:     1b7:	f7 07 00 00 00 00    	test   DWORD PTR [rdi],0x0
+1212779:     68f:	f7 07 00 00 00 00    	test   DWORD PTR [rdi],0x0
+1295145:    333e:	f7 0f 00 00 00 00    	test   DWORD PTR [rdi],0x0
+1295154:    3361:	f7 0f 00 00 00 00    	test   DWORD PTR [rdi],0x0
+1613541:     822:	f6 07 00             	test   BYTE PTR [rdi],0x0
+1630699:    1875:	f6 07 00             	test   BYTE PTR [rdi],0x0
+1812481:     7e8:	f7 07 00 00 00 00    	test   DWORD PTR [rdi],0x0
+1812525:     858:	f7 07 00 00 00 00    	test   DWORD PTR [rdi],0x0
+1821327:     7e8:	f7 0f 47 08 40 87    	test   DWORD PTR [rdi],0x87400847
+1824112:    251c:	f6 07 c4             	test   BYTE PTR [rdi],0xc4
+1824837:    2c8a:	f6 07 a3             	test   BYTE PTR [rdi],0xa3
+1841154:     fde:	f7 0f 00 00 17 01    	test   DWORD PTR [rdi],0x1170000
+2109456:     179:	f7 07 4a 6d 91 c9    	test   DWORD PTR [rdi],0xc9916d4a
+2111530:    1631:	f7 0f 87 a8 c9 96    	test   DWORD PTR [rdi],0x96c9a887
+2116192:    451b:	f7 07 fe e4 13 63    	test   DWORD PTR [rdi],0x6313e4fe
+2117623:    5320:	f7 0f 8e 53 c2 1f    	test   DWORD PTR [rdi],0x1fc2538e
+2125375:    a01e:	f7 0f 7a 43 70 bd    	test   DWORD PTR [rdi],0xbd70437a
+2177960:     913:	f7 0f 00 00 08 01    	test   DWORD PTR [rdi],0x1080000
+2177970:     92d:	f7 0f 00 00 18 01    	test   DWORD PTR [rdi],0x1180000
+2189000:    2433:	f6 0f 00             	test   BYTE PTR [rdi],0x0
+2189006:    243f:	f6 0f 00             	test   BYTE PTR [rdi],0x0
+2281902:    1579:	f6 0f 00             	test   BYTE PTR [rdi],0x0
+2310498:     fcd:	f7 0f 00 00 24 01    	test   DWORD PTR [rdi],0x1240000
+2311822: 18a:	f7 07 00 00 00 00    	test   DWORD PTR [rdi],0x0
+2311826: 195:	f7 07 00 00 00 00    	test   DWORD PTR [rdi],0x0
+2317101:     cd3:	f6 07 00             	test   BYTE PTR [rdi],0x0
+2317571:    11e0:	f6 07 00             	test   BYTE PTR [rdi],0x0
+2317589:    120a:	f6 07 00             	test   BYTE PTR [rdi],0x0
+2373543:     fdc:	f7 0f 00 00 22 01    	test   DWORD PTR [rdi],0x1220000
+2439331:    1327:	f6 07 00             	test   BYTE PTR [rdi],0x0
+2465272:     2ee:	f7 07 00 00 00 00    	test   DWORD PTR [rdi],0x0
+2465276:     2f9:	f7 07 00 00 00 00    	test   DWORD PTR [rdi],0x0
+2493663:    5848:	f6 07 00             	test   BYTE PTR [rdi],0x0
+2562997:    1c8d:	f6 07 00             	test   BYTE PTR [rdi],0x0
+2563002:    1c9b:	f6 07 00             	test   BYTE PTR [rdi],0x0
+2563081:    1d46:	f6 07 00             	test   BYTE PTR [rdi],0x0
+2563161:    1e1a:	f6 07 00             	test   BYTE PTR [rdi],0x0
+2563166:    1e28:	f6 07 00             	test   BYTE PTR [rdi],0x0
+2563275:    1f28:	f6 07 00             	test   BYTE PTR [rdi],0x0
+2588963:     feb:	f6 0f 00             	test   BYTE PTR [rdi],0x0
+2588977:    100f:	f6 0f 00             	test   BYTE PTR [rdi],0x0
+2610033: b16:	f6 07 00             	test   BYTE PTR [rdi],0x0
+2927230:    2bee:	f6 0f 00             	test   BYTE PTR [rdi],0x0
+2927236:    2bfb:	f6 0f 00             	test   BYTE PTR [rdi],0x0
+3054478:    1248:	f6 07 00             	test   BYTE PTR [rdi],0x0
+3054485:    1258:	f6 07 00             	test   BYTE PTR [rdi],0x0
+3085743:    104d:	f7 0f 00 00 00 00    	test   DWORD PTR [rdi],0x0
+3085747:    1058:	f7 0f 00 00 00 00    	test   DWORD PTR [rdi],0x0
+3085888:    11dc:	f7 0f 00 00 00 00    	test   DWORD PTR [rdi],0x0
+3163641:    25eb:	f6 07 00             	test   BYTE PTR [rdi],0x0
+3163646:    25f9:	f6 07 00             	test   BYTE PTR [rdi],0x0
+3163749:    26e3:	f6 07 00             	test   BYTE PTR [rdi],0x0
+3163848:    27cd:	f6 07 00             	test   BYTE PTR [rdi],0x0
+3163909:    2850:	f6 07 00             	test   BYTE PTR [rdi],0x0
+3407876:   0:	f6 0f 00             	test   BYTE PTR [rdi],0x0
+3446038:     30f:	f7 07 00 00 00 00    	test   DWORD PTR [rdi],0x0
+3446042:     31a:	f7 07 00 00 00 00    	test   DWORD PTR [rdi],0x0
+3534223: a59:	f7 07 9e 04 02 03    	test   DWORD PTR [rdi],0x302049e
+3618347: 180:	f7 07 00 00 00 00    	test   DWORD PTR [rdi],0x0
+3752737:    1090:	f7 07 00 00 00 00    	test   DWORD PTR [rdi],0x0
+3793821:     e8c:	f7 0f 00 00 1d 63    	test   DWORD PTR [rdi],0x631d0000
+3823037:     112:	f7 0f 00 00 00 00    	test   DWORD PTR [rdi],0x0
+3823041:     11d:	f7 0f 00 00 00 00    	test   DWORD PTR [rdi],0x0
+3823333:     3fc:	f6 0f 00             	test   BYTE PTR [rdi],0x0
+4084455:    280b:	f7 07 00 00 00 00    	test   DWORD PTR [rdi],0x0
+4086503:     b90:	f7 07 00 00 00 00    	test   DWORD PTR [rdi],0x0
+4087454:    1800:	f7 0f 00 00 00 00    	test   DWORD PTR [rdi],0x0
+4087467:    1830:	f7 0f 00 00 00 00    	test   DWORD PTR [rdi],0x0
+4094013:     5e7:	f7 07 00 00 00 00    	test   DWORD PTR [rdi],0x0
+4094017:     5f2:	f7 07 00 00 00 00    	test   DWORD PTR [rdi],0x0
+4154983:     fcb:	f6 0f 00             	test   BYTE PTR [rdi],0x0
+4203411:    1cb3:	f6 07 00             	test   BYTE PTR [rdi],0x0
+4203504:    1d70:	f6 07 00             	test   BYTE PTR [rdi],0x0
+4318163:    2b27:	f7 0f 00 00 00 00    	test   DWORD PTR [rdi],0x0
+4318167:    2b32:	f7 0f 00 00 00 00    	test   DWORD PTR [rdi],0x0
+4318231:    2bd8:	f7 0f 00 00 00 00    	test   DWORD PTR [rdi],0x0
+4318235:    2be3:	f7 0f 00 00 00 00    	test   DWORD PTR [rdi],0x0
+4325935: 510:	f6 07 00             	test   BYTE PTR [rdi],0x0
+4515841:     fd4:	f6 0f 00             	test   BYTE PTR [rdi],0x0
+4558054:    8e19:	f6 07 00             	test   BYTE PTR [rdi],0x0
+4579734:     cb2:	f6 0f 00             	test   BYTE PTR [rdi],0x0
+4593093:     fc8:	f6 0f 00             	test   BYTE PTR [rdi],0x0
+4642280: b05:	f6 07 01             	test   BYTE PTR [rdi],0x1
+4727140:     7d8:	f7 07 00 00 0e 00    	test   DWORD PTR [rdi],0xe0000
+4777848:    4fd8:	f6 07 00             	test   BYTE PTR [rdi],0x0
+4785952:     428:	f6 07 00             	test   BYTE PTR [rdi],0x0
+4850935:    218c:	f7 0f 00 00 00 00    	test   DWORD PTR [rdi],0x0
+4875344:    102a:	f7 0f 00 00 02 00    	test   DWORD PTR [rdi],0x20000
+5044958:    25c3:	f6 07 00             	test   BYTE PTR [rdi],0x0
+
+4524809:    2edf:	f6 04 24 01          	test   BYTE PTR [rsp],0x1
+
+100386:    582d:	f7 0e 00 00 00 00    	test   DWORD PTR [rsi],0x0
+100393:    583e:	f7 0e 00 00 00 00    	test   DWORD PTR [rsi],0x0
+100967:    5ddd:	f7 0e 00 00 00 00    	test   DWORD PTR [rsi],0x0
+106412: 4c0:	f7 0e 00 00 00 00    	test   DWORD PTR [rsi],0x0
+106439: 510:	f7 0e 00 00 00 00    	test   DWORD PTR [rsi],0x0
+576007:     910:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+576011:     91b:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+576044:     96f:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+576048:     97a:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+576103:     a15:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+576107:     a20:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+576120:     a4b:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+576124:     a56:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+628036:    175f:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+628040:    176a:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+735484:    12cf:	f7 0e 00 00 00 00    	test   DWORD PTR [rsi],0x0
+735511:    130b:	f7 0e 00 00 00 00    	test   DWORD PTR [rsi],0x0
+772499:    1c30:	f6 06 00             	test   BYTE PTR [rsi],0x0
+772510:    1c55:	f6 06 00             	test   BYTE PTR [rsi],0x0
+794684:    43b5:	f6 0e 00             	test   BYTE PTR [rsi],0x0
+794708:    43f1:	f6 0e 00             	test   BYTE PTR [rsi],0x0
+795839:  98:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+881540:    14c4:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+899686: 1ae:	f6 06 02             	test   BYTE PTR [rsi],0x2
+966661:     226:	f7 06 fb 06 fd 06    	test   DWORD PTR [rsi],0x6fd06fb
+1010472:     6e6:	f7 06 00 00 19 01    	test   DWORD PTR [rsi],0x1190000
+1237061: 430:	f7 0e 00 00 00 00    	test   DWORD PTR [rsi],0x0
+1259149:    29f7:	f6 06 00             	test   BYTE PTR [rsi],0x0
+1259306:    2b76:	f6 06 00             	test   BYTE PTR [rsi],0x0
+1259656:    2ebf:	f6 06 00             	test   BYTE PTR [rsi],0x0
+1260588:    383f:	f6 06 00             	test   BYTE PTR [rsi],0x0
+1329745: 6bb:	f6 06 00             	test   BYTE PTR [rsi],0x0
+1516185:     c98:	f6 06 00             	test   BYTE PTR [rsi],0x0
+1615638:  a0:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+1615642:  ae:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+1615675:  ff:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+1615726: 171:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+1615730: 17f:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+1692526:     734:	f6 06 00             	test   BYTE PTR [rsi],0x0
+1753878:   1a85d:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+1753889:   1a871:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+1783787:   8:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+1783791:  13:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+1783805:  41:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+1783809:  4c:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+1820860:     306:	f7 0e ea fb 78 07    	test   DWORD PTR [rsi],0x778fbea
+1828560:    532e:	f7 0e 8b d5 98 09    	test   DWORD PTR [rsi],0x998d58b
+1847825: 72b:	f6 06 00             	test   BYTE PTR [rsi],0x0
+1848388: d07:	f6 06 00             	test   BYTE PTR [rsi],0x0
+1848394: d14:	f6 06 00             	test   BYTE PTR [rsi],0x0
+1848447: d9c:	48 f6 06 00          	rex.W test BYTE PTR [rsi],0x0
+1848564: ec9:	f6 06 00             	test   BYTE PTR [rsi],0x0
+1850910:    1152:	f7 0e 00 00 00 00    	test   DWORD PTR [rsi],0x0
+1924609:    2b60:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+1924613:    2b6b:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+1998775:    3817:	f7 0e 00 00 00 00    	test   DWORD PTR [rsi],0x0
+1998779:    3822:	f7 0e 00 00 00 00    	test   DWORD PTR [rsi],0x0
+2113626:    2b0d:	f7 06 52 ab 51 19    	test   DWORD PTR [rsi],0x1951ab52
+2117901:    5613:	44 f6 06 e5          	rex.R test BYTE PTR [rsi],0xe5
+2126314:    a97e:	f6 06 e2             	test   BYTE PTR [rsi],0xe2
+2128861:    c2fe:	f6 0e fe             	test   BYTE PTR [rsi],0xfe
+2132847:    eb59:	f6 0e f4             	test   BYTE PTR [rsi],0xf4
+2150838:   19f7e:	f6 0e 35             	test   BYTE PTR [rsi],0x35
+2239397:    19cd:	f6 06 00             	test   BYTE PTR [rsi],0x0
+2239402:    19d8:	f6 06 00             	test   BYTE PTR [rsi],0x0
+2239407:    19e3:	f6 06 00             	test   BYTE PTR [rsi],0x0
+2239412:    19ee:	f6 06 00             	test   BYTE PTR [rsi],0x0
+2239431:    1a19:	f6 06 00             	test   BYTE PTR [rsi],0x0
+2239436:    1a24:	f6 06 00             	test   BYTE PTR [rsi],0x0
+2239441:    1a2f:	f6 06 00             	test   BYTE PTR [rsi],0x0
+2239446:    1a3a:	f6 06 00             	test   BYTE PTR [rsi],0x0
+2239451:    1a45:	f6 06 00             	test   BYTE PTR [rsi],0x0
+2239456:    1a50:	f6 06 00             	test   BYTE PTR [rsi],0x0
+2239461:    1a5b:	f6 06 00             	test   BYTE PTR [rsi],0x0
+2239466:    1a66:	f6 06 00             	test   BYTE PTR [rsi],0x0
+2239485:    1a91:	f6 06 00             	test   BYTE PTR [rsi],0x0
+2239490:    1a9c:	f6 06 00             	test   BYTE PTR [rsi],0x0
+2251870:    3e7a:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+2251888:    3eb0:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+2274750:     335:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+2311786: 13d:	f6 06 00             	test   BYTE PTR [rsi],0x0
+2311897: 255:	f6 06 00             	test   BYTE PTR [rsi],0x0
+2412492:     2aa:	f6 06 00             	test   BYTE PTR [rsi],0x0
+2414841:    1890:	f6 0e 00             	test   BYTE PTR [rsi],0x0
+2414847:    189c:	f6 0e 00             	test   BYTE PTR [rsi],0x0
+2493961:    5b4c:	f6 06 00             	test   BYTE PTR [rsi],0x0
+2522728: 370:	f7 0e 00 00 00 00    	test   DWORD PTR [rsi],0x0
+2562538:    1855:	f7 0e 00 00 00 00    	test   DWORD PTR [rsi],0x0
+2562542:    1863:	f7 0e 00 00 00 00    	test   DWORD PTR [rsi],0x0
+2562678:    198c:	f7 0e 00 00 00 00    	test   DWORD PTR [rsi],0x0
+2583700: cc8:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+2583704: cd6:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+2583740: d2a:	f6 06 00             	test   BYTE PTR [rsi],0x0
+2583749: d3d:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+2583826: deb:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+2583830: df9:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+2583883: e7b:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+2583915: ec4:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+2599121:     700:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+2599125:     70b:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+2698299:     8ff:	f6 0e 00             	test   BYTE PTR [rsi],0x0
+2698475:     aa4:	f6 0e 00             	test   BYTE PTR [rsi],0x0
+2698605:     bd2:	f6 0e 00             	test   BYTE PTR [rsi],0x0
+2718226:     921:	4e f7 0e 00 00 c0 0a 	rex.WRX test QWORD PTR [rsi],0xac00000
+2752121:     ee0:	f7 06 00 00 17 79    	test   DWORD PTR [rsi],0x79170000
+2752413:    11ac:	f7 06 00 00 21 00    	test   DWORD PTR [rsi],0x210000
+2784168:     557:	f6 06 00             	test   BYTE PTR [rsi],0x0
+2863326:     b18:	f6 06 00             	test   BYTE PTR [rsi],0x0
+2863331:     b26:	f6 06 00             	test   BYTE PTR [rsi],0x0
+2918878: 140:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+2976446:     69c:	f6 06 00             	test   BYTE PTR [rsi],0x0
+2977510:    10d6:	46 f6 06 00          	rex.RX test BYTE PTR [rsi],0x0
+3015879:    1613:	f7 0e 00 00 00 00    	test   DWORD PTR [rsi],0x0
+3015884:    161f:	f7 0e 00 00 00 00    	test   DWORD PTR [rsi],0x0
+3015985:    16e7:	f7 0e 00 00 00 00    	test   DWORD PTR [rsi],0x0
+3015989:    16f3:	f7 0e 00 00 00 00    	test   DWORD PTR [rsi],0x0
+3055108:    17c1:	f6 06 00             	test   BYTE PTR [rsi],0x0
+3072655:    4cdc:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+3219541: 4be:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+3252641:     726:	f6 06 00             	test   BYTE PTR [rsi],0x0
+3296746:     9a2:	f6 06 09             	test   BYTE PTR [rsi],0x9
+3442937:     704:	f7 06 00 00 06 08    	test   DWORD PTR [rsi],0x8060000
+3497531:     ec3:	f7 0e 00 00 09 00    	test   DWORD PTR [rsi],0x90000
+3506688:     52a:	f7 06 00 00 00 09    	test   DWORD PTR [rsi],0x9000000
+3545581:      96:	f6 0e 00             	test   BYTE PTR [rsi],0x0
+3545667:     147:	f6 0e 00             	test   BYTE PTR [rsi],0x0
+3545795:     254:	f6 0e 00             	test   BYTE PTR [rsi],0x0
+3548769:  18:	f6 0e 00             	test   BYTE PTR [rsi],0x0
+3585521:     76e:	f6 0e 00             	test   BYTE PTR [rsi],0x0
+3585573:     7e6:	f6 0e 00             	test   BYTE PTR [rsi],0x0
+3648770:    1ff1:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+3648774:    1ffc:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+3967206:      d9:	f6 0e 00             	test   BYTE PTR [rsi],0x0
+3983015:     d45:	f6 06 00             	test   BYTE PTR [rsi],0x0
+3997331:    1b20:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+3997335:    1b2b:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+4195305:     5f6:	f7 06 00 00 16 70    	test   DWORD PTR [rsi],0x70160000
+4248225:     9c9:	f7 0e 00 00 00 00    	test   DWORD PTR [rsi],0x0
+4262380:    18e0:	f6 0e 18             	test   BYTE PTR [rsi],0x18
+4323136:    5c0d:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+4323511:    5f86:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+4323924:    633a:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+4349452:     9b6:	f7 0e f5 f5 f3 f5    	test   DWORD PTR [rsi],0xf5f3f5f5
+4349455:     9be:	f7 0e 79 79 f9 79    	test   DWORD PTR [rsi],0x79f97979
+4591785:     3aa:	f7 06 00 00 08 09    	test   DWORD PTR [rsi],0x9080000
+4592230:     77c:	f7 06 00 00 00 12    	test   DWORD PTR [rsi],0x12000000
+4629171:    1890:	f6 06 00             	test   BYTE PTR [rsi],0x0
+4667705:     67a:	f6 06 00             	test   BYTE PTR [rsi],0x0
+4667710:     688:	f6 06 00             	test   BYTE PTR [rsi],0x0
+4667748:     6ef:	f6 06 00             	test   BYTE PTR [rsi],0x0
+4667780:     74e:	f6 06 00             	test   BYTE PTR [rsi],0x0
+4667785:     75c:	f6 06 00             	test   BYTE PTR [rsi],0x0
+4667812:     7b0:	f6 06 00             	test   BYTE PTR [rsi],0x0
+4667817:     7be:	f6 06 00             	test   BYTE PTR [rsi],0x0
+4667844:     812:	f6 06 00             	test   BYTE PTR [rsi],0x0
+4667849:     820:	f6 06 00             	test   BYTE PTR [rsi],0x0
+4667898:     8a2:	f6 06 00             	test   BYTE PTR [rsi],0x0
+4667939:     92e:	f6 06 00             	test   BYTE PTR [rsi],0x0
+4702753:     6da:	f7 06 00 00 0a 00    	test   DWORD PTR [rsi],0xa0000
+4703497:     d50:	f7 06 00 00 0f 00    	test   DWORD PTR [rsi],0xf0000
+4774085:    271c:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+4774089:    272a:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+4774171:    27f9:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+4774244:    28aa:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+4774248:    28b5:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+4774315:    2958:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+4774319:    2963:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+4774760:    2ddc:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+4774775:    2e13:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+4774791:    2e49:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+4774823:    2ebb:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+4774836:    2ee6:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+4774845:    2f0a:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+4775037:    3128:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+4775055:    3160:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+4775071:    3197:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+4775088:    31cd:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+4840574:     f27:	f7 0e 00 00 08 08    	test   DWORD PTR [rsi],0x8080000
+4853694:    3ef9:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+4853735:    3f5d:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+4853832:    405c:	f7 06 00 00 00 00    	test   DWORD PTR [rsi],0x0
+4999175: 2b0:	f6 06 00             	test   BYTE PTR [rsi],0x0
+5136863:     ee4:	f6 0e 00             	test   BYTE PTR [rsi],0x0
+
+
+389748:    1e84:	49 f7 04 24 00 03 00 	test   QWORD PTR [r12],0x300
+4890862:     ffd:	41 f6 04 24 10       	test   BYTE PTR [r12],0x10
