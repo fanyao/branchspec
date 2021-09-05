@@ -68,7 +68,7 @@ taskset 0x02 ./poc_v1
 
 Note: Change the <code>THRESHOLD</code> in line 36 of the source file (i.e., BranchSpec-v1>one_level_prediction>poc_v1.c) according to your system.
 
-## Running the PoC
+## Executing
 
 ```bash
 taskset 0x04 ./poc_v1
@@ -181,4 +181,3 @@ Secret value, secret[99]: 1; Inferred: 1; Latency: 129
 Total bit sent: 100, Total Error: 0, Threshold: 138
 ```
 </details>
-
