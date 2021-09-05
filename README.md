@@ -1,4 +1,4 @@
-# BranchSpec: Leaking Sensitive Information through Nested Speculative Branch Execution
+# BranchSpec: Leaking Sensitive Information through Speculative Branch Instruction Executions
 
 This repository contains proof-of-concept of information leakage attacks exploiting branch instruction executions in speculative path. 
 
