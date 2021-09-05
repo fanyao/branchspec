@@ -27,7 +27,7 @@ This repository contains proof-of-concept of information leakage attacks exploit
 
 This repository contains PoC code for both one-level prediction and history-based prediction attacks using BranchSpec-v1, gadget search tool for BranchSpec-v2 and utilites to determine condition for GHR flushing in history-based prediction and activation condition of history-based prediction.
 
-## Contents:
+## Repo overview
 - BranchSpec-v1
     - one_level_prediction
         - PoC v1: Nested if conditional, single-threaded
