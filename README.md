@@ -1,6 +1,15 @@
 # BranchSpec: Leaking Sensitive Information through Speculative Branch Instruction Executions
 
-This repository contains proof-of-concept of information leakage attacks exploiting branch instruction executions in speculative path. 
+This repository contains proof-of-concept of information leakage attacks exploiting branch instruction executions in speculative path. More details about BranchSpec-v1 based one-level prediction in this work can be found in our [paper](http://fan-yao.com/paper/2020_ICCD_branchspec.pdf). Our work can be cited using the following information:
+
+```bibtex
+@inproceedings{branchspec2020,
+  title={{BranchSpec: Information Leakage Attacks Exploiting Speculative Branch Instruction Executions}},
+  author={Chowdhuryy, Md Hafizul Islam and Liu, Hang and Yao, Fan},
+  booktitle={IEEE International Conference on Computer Design (ICCD)},
+  year={2020}
+}
+```
 
 ## Tested systems
 
@@ -32,7 +41,6 @@ This repository contains PoC code for both one-level prediction and history-base
     - GHR Flush: Determine GHR flush length
     - History-based prediction activation: Determine activation criterion for history-based prediction
 
-
 ## Building
 
 This project uses GNU Make, GCC and nasm to compile. On Ubuntu, you can install them using:
@@ -60,14 +68,14 @@ taskset 0x02 ./poc_v1
 
 Note: Change the <code>THRESHOLD</code> in line 36 of the source file (i.e., BranchSpec-v1>one_level_prediction>poc_v1.c) according to your system.
 
-## Example output
-
-This output is obtained on Intel(R) Core(TM) i5-9500 for <code>poc_v1</code> by running 
+## Running the PoC
 
 ```bash
 taskset 0x04 ./poc_v1
 ```
-
+<details>
+    <summary> Example output (<i>click to expand</i>)</summary>
+    
 ```
 Transmitting secret...
 Secret value, secret[0]: 0; Inferred: 0; Latency: 145
@@ -172,18 +180,5 @@ Secret value, secret[98]: 1; Inferred: 1; Latency: 127
 Secret value, secret[99]: 1; Inferred: 1; Latency: 129
 Total bit sent: 100, Total Error: 0, Threshold: 138
 ```
+</details>
 
-## Paper
-
-More details about BranchSpec-v1 based one-level prediction in this work can be found in our [paper](http://fan-yao.com/paper/2020_ICCD_branchspec.pdf).
-
-## Citing BranchSpec
-
-```bibtex
-@inproceedings{branchspec2020,
-  title={{BranchSpec: Information Leakage Attacks Exploiting Speculative Branch Instruction Executions}},
-  author={Chowdhuryy, Md Hafizul Islam and Liu, Hang and Yao, Fan},
-  booktitle={IEEE International Conference on Computer Design (ICCD)},
-  year={2020}
-}
-```
