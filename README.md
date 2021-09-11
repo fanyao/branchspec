@@ -7,6 +7,7 @@ This repository contains proof-of-concept of information leakage attacks exploit
   title={{BranchSpec: Information Leakage Attacks Exploiting Speculative Branch Instruction Executions}},
   author={Chowdhuryy, Md Hafizul Islam and Liu, Hang and Yao, Fan},
   booktitle={IEEE International Conference on Computer Design (ICCD)},
+  pages={529--536},
   year={2020}
 }
 ```
