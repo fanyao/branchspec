@@ -23,7 +23,12 @@ uint64_t rdtsc_probe[2][1024] = {};
 
 static size_t THRESHOLD = 0;
 
+#ifdef OPENSSL
+extern "C" int randomize_pht();
+#else
 extern int randomize_pht();
+#endif
+
 
 
 void mfence() {
@@ -66,7 +71,11 @@ uint64_t detect_mispred_threshold() {
   uint64_t mispred[64], corrpred[64];
 
   for (int i = 0; i < 64; i++) {
-    randomize_pht();mfence();
+    #ifdef OPENSSL
+    #else
+    randomize_pht();
+    #endif
+    mfence();
     dummy_function(0); dummy_function(0);
     flush(&x1);
     mfence();dummy_function(0);mfence();
@@ -77,7 +86,11 @@ uint64_t detect_mispred_threshold() {
     mispred[i] = end_1 - start_1;
   }
   for (int i = 0; i < 64; i++) {
-    randomize_pht();mfence();
+    #ifdef OPENSSL
+    #else
+    randomize_pht();
+    #endif
+    mfence();
     dummy_function(0);
     dummy_function(0);
     flush(&x1);
