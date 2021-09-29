@@ -12,12 +12,6 @@ This repository contains proof-of-concept of information leakage attacks exploit
 }
 ```
 
-## Tested systems
-
-- Intel(R) Xeon(R) Gold 6242 (Family: Cascade Lake, Microcode: 0x5002f01)
-- Intel(R) Core(TM) i5-9500 (Family: Coffee Lake, Microcode: 0xd6) 
-- Intel(R) Core(TM) i7-6700 (Family: Skylake, Microcode: 0xdc)
-
 ## Environment
 
 - **Operating System:** Ubuntu 18.04.5 LTS
