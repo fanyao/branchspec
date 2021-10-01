@@ -139,8 +139,31 @@ static inline void additional_ops() {
 #define AT taken_branch(0);
 #define AT_START taken_branch(0);
 #define AT12 AT AT AT AT AT AT AT AT AT AT AT AT; // 12 taken branch
+#define AT100 AT12 AT12 AT12 AT12 AT12 AT12 AT12 AT12 AT AT AT AT;
 
 FORCE_INLINE void taken_branch(int ctrl) {
   if (ctrl)
     asm("nop");
+}
+
+
+int reload_t(void *ptr) {
+  /* Utility functions from https://github.com/IAIK/transientfail/ */
+  uint64_t start = 0, end = 0;
+  start = rdtsc();
+  maccess(ptr);
+  end = rdtsc();
+  mfence();
+  return (int)(end - start);
+}
+
+int flush_reload_t(void *ptr) {
+  /* Utility functions from https://github.com/IAIK/transientfail/ */
+  uint64_t start = 0, end = 0;
+  start = rdtsc();
+  maccess(ptr);
+  end = rdtsc();
+  flush(ptr);
+  mfence();
+  return (int)(end - start);
 }
