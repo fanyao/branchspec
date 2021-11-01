@@ -5,7 +5,7 @@ This repository contains proof-of-concept of information leakage attacks exploit
 ```bibtex
 @ARTICLE {branchspectre2021,
   author = {Chowdhuryy, Md Hafizul Islam and Yao, Fan},
-  journal = {IEEE Transactions on Computers},
+  journal = {IEEE Transactions on Computers (TC)},
   title = {Leaking Secrets through Modern Branch Predictor in the Speculative World},
   year = {2021},
   issn = {1557-9956},
