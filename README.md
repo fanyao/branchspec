@@ -1,26 +1,6 @@
 # BranchSpec: Leaking Sensitive Information through Speculative Branch Instruction Executions
 
-This repository contains proof-of-concept of information leakage attacks exploiting branch instruction executions in speculative path. The key observation is that speculative resolution of conditional branches (i.e., in nested speculation) alter the states of pattern history table (PHT) in modern processors. Such changes are not restored after the corresponding branches are later squashed. This characteristic allows attackers to exploit the BPU as the secret transmitting medium in transient execution attacks, which we call as BranchSpectre. Two variants of the BranchSpectre attacks (BranchSpectre-v1 and BranchSpectre-v2) are demonstrated in this repo. More details about BranchSpectre can be found in our [paper](https://ieeexplore.ieee.org/document/9591268) published in IEEE Transactions of Computers. The original conference paper can be found [here](http://fan-yao.com/paper/2020_ICCD_branchspec.pdf). Our work can be cited using the following information:
-
-```bibtex
-@ARTICLE {branchspectre2021,
-  author = {Chowdhuryy, Md Hafizul Islam and Yao, Fan},
-  journal = {IEEE Transactions on Computers (TC)},
-  title = {Leaking Secrets through Modern Branch Predictor in the Speculative World},
-  year = {2021},
-  issn = {1557-9956},
-  doi = {10.1109/TC.2021.3122830},
-  publisher = {IEEE Computer Society},
-}
-
-@inproceedings{branchspec2020,
-  title={{BranchSpec: Information Leakage Attacks Exploiting Speculative Branch Instruction Executions}},
-  author={Chowdhuryy, Md Hafizul Islam and Liu, Hang and Yao, Fan},
-  booktitle={IEEE International Conference on Computer Design (ICCD)},
-  pages={529--536},
-  year={2020}
-}
-```
+This repository contains proof-of-concept of information leakage attacks exploiting branch instruction executions in speculative path. The key observation is that speculative resolution of conditional branches (i.e., in nested speculation) alter the states of pattern history table (PHT) in modern processors. Such changes are not restored after the corresponding branches are later squashed. This characteristic allows attackers to exploit the BPU as the secret transmitting medium in transient execution attacks, which we call as BranchSpectre. Two variants of the BranchSpectre attacks (BranchSpectre-v1 and BranchSpectre-v2) are demonstrated in this repo. More details about BranchSpectre can be found in our [paper](https://ieeexplore.ieee.org/document/9591268) published in IEEE Transactions of Computers. The original conference paper can be found [here](http://fan-yao.com/paper/2020_ICCD_branchspec.pdf).
 
 ## Environment
 
@@ -186,3 +166,25 @@ Secret value, secret[99]: 1; Inferred: 1; Latency: 129
 Total bit sent: 100, Total Error: 0, Threshold: 138
 ```
 </details>
+
+## Citing our work
+
+```bibtex
+@ARTICLE {branchspectre2021,
+  author = {Chowdhuryy, Md Hafizul Islam and Yao, Fan},
+  journal = {IEEE Transactions on Computers (TC)},
+  title = {Leaking Secrets through Modern Branch Predictor in the Speculative World},
+  year = {2021},
+  issn = {1557-9956},
+  doi = {10.1109/TC.2021.3122830},
+  publisher = {IEEE Computer Society},
+}
+
+@inproceedings{branchspec2020,
+  title={{BranchSpec: Information Leakage Attacks Exploiting Speculative Branch Instruction Executions}},
+  author={Chowdhuryy, Md Hafizul Islam and Liu, Hang and Yao, Fan},
+  booktitle={IEEE International Conference on Computer Design (ICCD)},
+  pages={529--536},
+  year={2020}
+}
+```
